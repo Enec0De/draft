@@ -1,0 +1,1 @@
+*[Abbreviations]: My abbreviations

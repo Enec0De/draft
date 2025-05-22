@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "MonoLite";
+  src:
+    url("../assets/fonts/LXGWWenKaiMonoLite-Medium.ttf");
+}
+
+:root {
+  --md-text-font: "MonoLite";
+  --md-code-font: "MonoLite";
+}

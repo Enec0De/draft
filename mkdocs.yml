@@ -1,0 +1,139 @@
+# Project information
+site_name: Jellyfish's Drafts
+site_url: https://enec0de.github.io/draft
+site_author: Aina
+site_description: >-
+  Some miscellaneous.
+
+# Repository
+repo_name: Enec0De/draft
+repo_url: https://github.com/Enec0De/draft
+
+# Copyright
+copyright: Copyright &copy; 2024 - 2025 Aina.
+
+# Configuration
+theme:
+  name: material
+  language: zh
+  features:
+    - content.code.annotate
+    - content.code.copy
+    - content.tooltips
+    # - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    # - navigation.instant
+    # - navigation.instant.prefetch
+    # - navigation.instant.preview
+    # - navigation.instant.progress
+    # - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    # - offline
+    # - search.highlight
+    # - search.share
+    # - search.suggest
+    - toc.follow
+    # - toc.integrate
+  palette: 
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent : amber
+      toggle:
+        icon: material/jellyfish
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: pink
+      toggle:
+        icon: material/jellyfish-outline
+        name: Switch to light mode
+  font: false
+  favicon: assets/images/jellyfish-outline.svg
+  icon:
+    logo: material/format-list-text
+    # repo: material/git
+
+# Plugins
+plugins:
+  - search:
+      lang: zh
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - minify:
+      minify_html: true
+
+# Additional configuration
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://www.baidu.com
+    - icon: fontawesome/brands/x-twitter
+      link: https://www.baidu.com
+
+extra_javascript:
+  - javascripts/katex.js
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
+
+extra_css:
+  - stylesheets/extra.css
+  - https://unpkg.com/katex@0/dist/katex.min.css
+
+#Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      pygments_lang_class: true
+      line_spans: __span
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Page tree
+nav:
+  - Home: index.md
+  - Python:
+    - python/index.md
+    - Short: python/short.md
+    - Object: python/object.md
