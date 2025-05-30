@@ -97,9 +97,9 @@ markdown_extensions:
       permalink: true
   - pymdownx.arithmatex:
       generic: true
-  - pymdownx.betterem:
-      smart_enable: all
-  - pymdownx.caret
+  # - pymdownx.betterem:
+  #     smart_enable: all
+  # - pymdownx.caret
   - pymdownx.details
   - pymdownx.emoji:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
@@ -110,7 +110,7 @@ markdown_extensions:
       line_spans: __span
   - pymdownx.inlinehilite
   - pymdownx.keys
-  - pymdownx.mark
+  # - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.snippets:
       auto_append:
@@ -128,11 +128,13 @@ markdown_extensions:
           case: lower
   - pymdownx.tasklist:
       custom_checkbox: true
-  - pymdownx.tilde
+  # - pymdownx.tilde
 
 # Page tree
 nav:
-  - Home: index.md
+  - Home: 
+    - index.md
+    - Skeleton: indexpage/skeleton.md
   - Python:
     - python/index.md
     - Short: python/short.md
