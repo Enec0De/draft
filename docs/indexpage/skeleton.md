@@ -3,10 +3,10 @@ title: Code Skeleton
 status: new
 ---
 
-My code skeleton
+个人文档代码规范
 ================
 
-Just some basic rules. For myself.
+一个仅为个人使用的行文规范。
 
 ***
 
@@ -92,6 +92,8 @@ title: 页面标题
 
 === "Ordered"
 
+    <div class="grid" markdown>
+    
     ``` markdown title="List, ordered"
     1.  Item\_1
     1.  Item\_2
@@ -99,19 +101,19 @@ title: 页面标题
         1.  Subitem\_1
         1.  Subitem\_2
     ```
-
-    <div class="result" markdown>
-
-    1.  Item\_1
-    1.  Item\_2
     
-        1.  Subitem\_1
-        1.  Subitem\_2
-
+    > 1.  Item\_1
+    > 1.  Item\_2
+    > 
+    >     1.  Subitem\_1
+    >     1.  Subitem\_2
+    
     </div>
 
 === "Unordered"
-    
+
+    <div class="grid" markdown>
+
     ``` markdown title="List, unordered"
     - Item\_1
     - Item\_2
@@ -119,18 +121,18 @@ title: 页面标题
         - Subitem\_1 
         - Subitem\_2
     ```
-
-    <div class="result" markdown>
-
-    - Item\_1
-    - Item\_2
     
-        - Subitem\_1 
-        - Subitem\_2
-
+    > - Item\_1
+    > - Item\_2
+    > 
+    >     - Subitem\_1 
+    >     - Subitem\_2
+    
     </div>
 
 #### 2. 任务列表 { #task }
+
+<div class="grid" markdown>
 
 ``` markdown title="Task list"
 - [x] Finished item.
@@ -138,11 +140,9 @@ title: 页面标题
     - [ ] Subitem.
 ```
 
-<div class="result" markdown>
-
-- [x] Finished item.
-- [ ] Unfinished item. 
-    - [ ] Subitem.
+> - [x] Finished item.
+> - [ ] Unfinished item. 
+>     - [ ] Subitem.
 
 </div>
 
@@ -151,17 +151,17 @@ title: 页面标题
 
 #### 3. 定义列表 { #definition }
 
+<div class="grid" markdown>
+
 ``` markdown title="Definition list"
 `Definition_1`
 
 :   Content of definition\_1.
 ```
 
-<div class="result" markdown>
-
-`Definition_1`
-
-:   Content of definition\_1.
+> `Definition_1`
+> 
+> :   Content of definition\_1.
 
 </div>
 
@@ -169,61 +169,55 @@ title: 页面标题
 
 === "Left"
 
+    <div class="grid" markdown>
+
     ``` markdown hl_lines="2" title="Data table, columns aligned to left"
-    | Method      | Description                          |
-    | :---------- | :----------------------------------- |
-    | `GET`       | :material-check:     Fetch resource  |
-    | `PUT`       | :material-check-all: Update resource |
-    | `DELETE`    | :material-close:     Delete resource |
+    | Method      | Description     |
+    | :---------- | :-------------- |
+    | `GET`       | Fetch resource  |
+    | `DELETE`    | Delete resource |
     ```
 
-    <div class="result" markdown>
-
-    | Method      | Description                          |
-    | :---------- | :----------------------------------- |
-    | `GET`       | :material-check:     Fetch resource  |
-    | `PUT`       | :material-check-all: Update resource |
-    | `DELETE`    | :material-close:     Delete resource |
+    | Method      | Description     |
+    | :---------- | :-------------- |
+    | `GET`       | Fetch resource  |
+    | `DELETE`    | Delete resource |
 
     </div>
 
 === "Center"
 
+    <div class="grid" markdown>
+
     ``` markdown hl_lines="2" title="Data table, columns centered"
-    | Method      | Description                          |
-    | :---------: | :----------------------------------: |
-    | `GET`       | :material-check:     Fetch resource  |
-    | `PUT`       | :material-check-all: Update resource |
-    | `DELETE`    | :material-close:     Delete resource |
+    | Method      | Description     |
+    | :---------: | :-------------: |
+    | `GET`       | Fetch resource  |
+    | `DELETE`    | Delete resource |
     ```
 
-    <div class="result" markdown>
-
-    | Method      | Description                          |
-    | :---------: | :----------------------------------: |
-    | `GET`       | :material-check:     Fetch resource  |
-    | `PUT`       | :material-check-all: Update resource |
-    | `DELETE`    | :material-close:     Delete resource |
+    | Method      | Description     |
+    | :---------: | :-------------: |
+    | `GET`       | Fetch resource  |
+    | `DELETE`    | Delete resource |
 
     </div>
 
 === "Right"
 
+    <div class="grid" markdown>
+
     ``` markdown hl_lines="2" title="Data table, columns aligned to right"
-    | Method      | Description                          |
-    | ----------: | -----------------------------------: |
-    | `GET`       | :material-check:     Fetch resource  |
-    | `PUT`       | :material-check-all: Update resource |
-    | `DELETE`    | :material-close:     Delete resource |
+    | Method      | Description     |
+    | ----------: | --------------: |
+    | `GET`       | Fetch resource  |
+    | `DELETE`    | Delete resource |
     ```
 
-    <div class="result" markdown>
-
-    | Method      | Description                          |
-    | ----------: | -----------------------------------: |
-    | `GET`       | :material-check:     Fetch resource  |
-    | `PUT`       | :material-check-all: Update resource |
-    | `DELETE`    | :material-close:     Delete resource |
+    | Method      | Description     |
+    | ----------: | --------------: |
+    | `GET`       | Fetch resource  |
+    | `DELETE`    | Delete resource |
 
     </div>
 
@@ -265,7 +259,9 @@ title: 页面标题
 
 #### 2. 结果渲染 { #output }
 
-代码块后可以紧跟以下代码，展示其渲染结果，效果如上：
+代码块后可以紧跟以下代码，展示其渲染结果，[效果如上][out]：
+
+  [out]: #basic
 
 ``` markdown linenums="1"
 <div class="result" markdown>
@@ -341,18 +337,157 @@ test.py::3
 其他可选：`abstract`，`success`，`question`，`failure`，`danger`，`bug`，`example`，`quote`。
 
 ``` markdown title="Admonitions"
-!!! note "Note"
+!!! warning "Warning"
 
-    Content.
+    尽量保证简洁，不乱用警告框。
 ```
 
 <div class="result" markdown>
 
-!!! note "Note"
+!!! warning "Warning"
 
-    Content.
+    尽量保证简洁，不乱用警告框。
 
 </div>
+
+***
+
+### 网格 { #grid }
+
+只需要使用带有 `grid` 类的 `div` 标签包裹一组区块，就可以将任意区块元素排列成网格布局。
+
+其中，列表语法是卡片网格的快捷写法。对有序或无序的列表，该语法将其包裹于包含 `grid` 和 `cards` 两个类的 `div` 元素内。
+
+#### 1. 列表语法 {grid-cards}
+
+=== "Card Grid"
+    ``` html 
+    <div class="grid cards" markdown>
+    
+    - :fontawesome-brands-linux: **Linux** for me
+    - :fontawesome-brands-markdown: **Markdown** for this draft
+    - :fontawesome-brands-bilibili: **Bilibili** for animate
+    - :fontawesome-brands-python: **Python** for math
+    
+    </div>
+    ```
+    
+=== "Generic Grid"
+    ``` html 
+    <div class="grid" markdown>
+    
+    :fontawesome-brands-linux: **Linux** for me
+    { .card }
+    
+    :fontawesome-brands-markdown: **Markdown** for this draft
+    { .card }
+    
+    :fontawesome-brands-bilibili: **Bilibili** for animate
+    { .card }
+    
+    :fontawesome-brands-python: **Python** for math
+    { .card }
+    
+    </div>
+    ```
+
+<div class="grid" markdown>
+
+:fontawesome-brands-linux: **Linux** for me
+{ .card }
+
+:fontawesome-brands-markdown: **Markdown** for this draft
+{ .card }
+
+:fontawesome-brands-bilibili: **Bilibili** for animate
+{ .card }
+
+:fontawesome-brands-python: **Python** for math
+{ .card }
+
+</div>
+
+!!! note
+
+    两种写法等价，后者多用于组合不同类型的块。
+
+#### 2. 列表语法补充 { #cards-append }
+
+``` html
+<div class="grid cards" markdown>
+
+-   :fontawesome-brands-linux: **Linux** for me
+   
+    ***
+   
+    [:octicons-arrow-right-24: Learn More](https://www.kernel.org/)
+
+-   :fontawesome-brands-python: **Python** for math
+
+    ***
+
+    [:octicons-arrow-right-24: Learn More](https://www.python.org/)
+
+</div>
+```
+
+<div class="grid cards" markdown>
+
+-   :fontawesome-brands-linux: **Linux** for me
+   
+    ***
+   
+    [:octicons-arrow-right-24: Learn More](https://www.kernel.org/)
+
+-   :fontawesome-brands-python: **Python** for math
+
+    ***
+
+    [:octicons-arrow-right-24: Learn More](https://www.python.org/)
+
+</div>
+
+#### 3. 通用网格 { #generic-grd }
+
+```` html 
+<div class="grid" markdown>
+
+**This is card.**
+{ .card }
+
+> **This is quote.** 
+
+=== "Content tab"
+
+    This is content tab.
+
+``` title="Code tab"
+This is code tab.
+```
+
+</div>
+````
+
+<div class="grid" markdown>
+
+**This is a card.** 
+{ .card }
+
+> **This is a quote.** 
+
+=== "Content tab"
+
+    This is content tab.
+
+``` title="Code tab"
+This is code tab.
+```
+
+</div>
+
+!!! note
+
+    尽量避免多层、不同块的嵌套，包括但不限于网格。
 
 ***
 
@@ -372,102 +507,12 @@ test.py::3
 
 !!! info
     
-    更多的快捷键可以在[官方文档][shortcuts]处指引的[扩展文档][extensions]内查询
+    更多的快捷键可以在[官方文档][shortcuts]处指引的[扩展文档][extensions]内查询。
 
       [shortcuts]: https://squidfunk.github.io/mkdocs-material/reference/formatting/#adding-keyboard-keys
       [extensions]: https://facelessuser.github.io/pymdown-extensions/extensions/tilde/
 
-#### 2. 网格 { #grid }
-
-只需要使用带有 `grid` 类的 `div` 标签包裹一组区块，就可以将任意区块元素排列成网格布局。
-
-其中，列表语法是卡片网格的快捷写法。对有序或无序的列表，该语法将其包裹于包含 `grid` 和 `cards` 两个类的 `div` 元素内。
-
-列表语法示例如下：
-
-``` html title="Card grid"
-<div class="grid cards" markdown>
-
-- **Grid** 1 ...
-- **Grid** 2 ...
-- **Grid** 3 ...
-- **Grid** 4 ...
-
-</div>
-```
-
-<div class="result" markdown>
-  <div class="grid cards" markdown>
-
-- **Grid** 1 ...
-- **Grid** 2 ...
-- **Grid** 3 ...
-- **Grid** 4 ...
-
-  </div>
-</div>
-
-通用网格示例如下：
-
-```` html hl_lines="4" title="Generic grids"
-<div class="grid" markdown>
-
-**This is card.**
-{ .card }
-
-> **This is quote.** 
-
-=== "Unordered list"
-
-    - list.
-
-=== "Ordered list"
-
-    1. list.
-
-``` title="Content tabs"
-=== "Unordered list"
-
-    - list.
-
-=== "Ordered list"
-
-    1. list.
-```
-
-</div>
-````
-
-<div class="result" markdown>
-  <div class="grid" markdown>
-
-**This is a card.** Equivalent list.
-{ .card }
-
-> **This is a quote.** 
-
-=== "Unordered list"
-
-    - This is unordered list.
-
-=== "Ordered list"
-
-    1. This is ordered list.
-
-``` title="Content tabs"
-=== "Unordered list"
-
-    - This is unordered list.
-
-=== "Ordered list"
-
-    1. This is ordered list.
-```
-
-  </div>
-</div>
-
-#### 3. 数学公式 { #math }
+#### 2. 数学公式 { #math }
 
 用的是 [KaTeX][katex]。
 
