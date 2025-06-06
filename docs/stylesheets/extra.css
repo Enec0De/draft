@@ -2,6 +2,7 @@
   font-family: "MonoLite";
   src:
     url("../assets/fonts/LXGWWenKaiMonoLite-Medium.ttf");
+  font-display: swap; 
 }
 
 :root {
