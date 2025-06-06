@@ -2,22 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://enec0de.github.io/draft/</loc>
-         <lastmod>2025-06-02</lastmod>
+         <lastmod>2025-06-06</lastmod>
+    </url>
+    <url>
+         <loc>https://enec0de.github.io/draft/indexpage/code-block/</loc>
+         <lastmod>2025-06-06</lastmod>
+    </url>
+    <url>
+         <loc>https://enec0de.github.io/draft/indexpage/grid/</loc>
+         <lastmod>2025-06-06</lastmod>
+    </url>
+    <url>
+         <loc>https://enec0de.github.io/draft/indexpage/link/</loc>
+         <lastmod>2025-06-06</lastmod>
+    </url>
+    <url>
+         <loc>https://enec0de.github.io/draft/indexpage/list/</loc>
+         <lastmod>2025-06-06</lastmod>
+    </url>
+    <url>
+         <loc>https://enec0de.github.io/draft/indexpage/others/</loc>
+         <lastmod>2025-06-06</lastmod>
     </url>
     <url>
          <loc>https://enec0de.github.io/draft/indexpage/skeleton/</loc>
-         <lastmod>2025-06-02</lastmod>
+         <lastmod>2025-06-06</lastmod>
+    </url>
+    <url>
+         <loc>https://enec0de.github.io/draft/indexpage/table/</loc>
+         <lastmod>2025-06-06</lastmod>
     </url>
     <url>
          <loc>https://enec0de.github.io/draft/python/</loc>
-         <lastmod>2025-06-02</lastmod>
+         <lastmod>2025-06-06</lastmod>
     </url>
     <url>
          <loc>https://enec0de.github.io/draft/python/object/</loc>
-         <lastmod>2025-06-02</lastmod>
+         <lastmod>2025-06-06</lastmod>
     </url>
     <url>
          <loc>https://enec0de.github.io/draft/python/short/</loc>
-         <lastmod>2025-06-02</lastmod>
+         <lastmod>2025-06-06</lastmod>
     </url>
 </urlset>
