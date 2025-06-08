@@ -44,8 +44,8 @@ title: 页面标题
 
 !!! info
     
-    若非必要，不使用四级以上的标题，不使用两层以上的嵌套引用。同时，建议每次都用以下方式修改渲染的锚点与目录：
+    约定不使用四级以上的标题，不使用两层以上的嵌套引用。建议用以下方式修改渲染的锚点与目录：
 
     ``` markdown
-    ### Old Heading { #New-Heading data-toc-label="New Heading" }
+    ### Heading { #New-Heading data-toc-label="New Heading" }
     ```

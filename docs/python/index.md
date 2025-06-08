@@ -2,6 +2,9 @@
 title: Python Home
 ---
 
-# About me
+About me
+========
 
 Something about Python.
+
+***

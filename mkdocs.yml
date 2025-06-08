@@ -1,5 +1,5 @@
 # Project information
-site_name: Jellyfish's Drafts
+site_name: 随便写写
 site_url: https://enec0de.github.io/draft
 site_author: Aina
 site_description: >-
@@ -72,9 +72,9 @@ plugins:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://www.baidu.com
+      link: https://github.com/
     - icon: fontawesome/brands/x-twitter
-      link: https://www.baidu.com
+      link: https://x.com/home
 
 extra_javascript:
   - javascripts/katex.js
@@ -143,5 +143,5 @@ nav:
     - 其他元素: indexpage/others.md
   - Python:
     - python/index.md
-    - Short: python/short.md
-    - Object: python/object.md
+    - 基本功能: python/short.md
+    - 面向对象: python/object.md

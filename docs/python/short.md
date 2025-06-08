@@ -1,12 +1,16 @@
 ---
-title: Short
+title: 基本功能
 ---
 
-# In short
+基本功能
+========
 
 **In short**, this section covers key Python concepts in a nutshell
 
-## `print`
+***
+
+`print`
+-------
 
 === ":octicons-file-code-16: print\_demo.py"
 
@@ -14,9 +18,10 @@ title: Short
     --8<-- "docs/python/sourcecode/01_print_demo.py"
     ```
 
----
+***
 
-## `math`
+`math`
+------
 
 === ":octicons-file-code-16: math\_demo.py"
 
@@ -24,9 +29,10 @@ title: Short
     --8<-- "docs/python/sourcecode/02_math_demo.py"
     ```
 
----
+***
 
-## `logic`
+`logic`
+-------
 
 === ":octicons-file-code-16: logic\_demo.py"
 
@@ -34,9 +40,10 @@ title: Short
     --8<-- "docs/python/sourcecode/03_logic_demo.py"
     ```
 
----
+***
 
-## `list`
+`list`
+------
 
 === ":octicons-file-code-16: list\_demo.py"
 
@@ -44,9 +51,10 @@ title: Short
     --8<-- "docs/python/sourcecode/04_list_demo.py"
     ```
 
----
+***
 
-## `dictionary`
+`dictionary`
+------------
 
 === ":octicons-file-code-16: dictionary.py"
 
@@ -54,9 +62,10 @@ title: Short
     --8<-- "docs/python/sourcecode/05_dictionary.py"
     ```
 
----
+***
 
-## `for`
+`for`
+-----
 
 === ":octicons-file-code-16: for\_demo.py"
 
@@ -64,9 +73,10 @@ title: Short
     --8<-- "docs/python/sourcecode/06_for_demo.py"
     ```
 
----
+***
 
-## `while`
+`while`
+-------
 
 === ":octicons-file-code-16: while\_demo.py"
 
@@ -74,9 +84,10 @@ title: Short
     --8<-- "docs/python/sourcecode/07_while_demo.py"
     ```
 
----
+***
 
-## `format`
+`format`
+--------
 
 === ":octicons-file-code-16: format\_demo.py"
 
@@ -84,9 +95,10 @@ title: Short
     --8<-- "docs/python/sourcecode/08_format_demo.py"
     ```
 
----
+***
 
-## `function`
+`function`
+----------
 
 === ":octicons-file-code-16: function\_demo.py"
 
@@ -94,9 +106,10 @@ title: Short
     --8<-- "docs/python/sourcecode/09_function.py"
     ```
 
----
+***
 
-## `import`
+`import`
+--------
 
 === ":octicons-file-code-16: import\_demo.py"
 
