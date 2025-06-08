@@ -30,9 +30,9 @@ class CuteLion(CuteCat):
         print("I am king. I would not miao!")
 
 lion_1 = CuteLion("Dio", 5, "gold")
-print(f"cat's name is: {cat_1.name}")
-print(f"cat's age is: {cat_1.age}")
-print(f"cat's color is: {cat_1.color}")
+print(f"lion's name is: {lion_1.name}")
+print(f"lion's age is: {lion_1.age}")
+print(f"lion's color is: {lion_1.color}")
 # 猫！哈哈！
 
 lion_1.ao()
