@@ -1,11 +1,11 @@
 @font-face {
-  font-family: "MonoLite";
+  font-family: "LXGWMono";
   src:
-    url("../assets/fonts/LXGWWenKaiMonoLite-Medium.ttf");
+    url("../assets/fonts/LXGWWenKaiMonoLite-Medium.woff2");
   font-display: swap; 
 }
 
 :root {
-  --md-text-font: "MonoLite";
-  --md-code-font: "MonoLite";
+  --md-text-font: "LXGWMono";
+  --md-code-font: "LXGWMono";
 }
