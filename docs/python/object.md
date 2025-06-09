@@ -5,7 +5,7 @@ title: 面向对象
 面向对象
 ========
 
-This is object-oriented programming, and the subsequent content.
+从这里开始有“类”和“对象”，以及文件操作和测试相关。
 
 ***
 

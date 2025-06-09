@@ -5,7 +5,7 @@ title: 基本功能
 基本功能
 ========
 
-**In short**, this section covers key Python concepts in a nutshell
+简而言之，就是基本操作的简单示例。
 
 ***
 

@@ -145,3 +145,4 @@ nav:
     - python/index.md
     - 基本功能: python/short.md
     - 面向对象: python/object.md
+    - 操作系统: python/os.md

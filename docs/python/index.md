@@ -5,6 +5,8 @@ title: Python Home
 About me
 ========
 
-Something about Python.
+随便贴贴代码，有空再结合自己的思考整理。
+
+目标：知识点放进代码注释
 
 ***
