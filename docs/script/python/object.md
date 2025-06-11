@@ -15,7 +15,7 @@ title: 面向对象
 === ":octicons-file-code-16: class\_demo.py"
 
     ``` py
-    --8<-- "docs/python/sourcecode/11_class.py"
+    --8<-- "docs/script/python/sourcecode/11_class.py"
     ```
 
 ***
@@ -26,7 +26,7 @@ title: 面向对象
 === ":octicons-file-code-16: file\_demo.py"
 
     ``` py
-    --8<-- "docs/python/sourcecode/12_file.py"
+    --8<-- "docs/script/python/sourcecode/12_file.py"
     ```
 
 ***
@@ -34,7 +34,7 @@ title: 面向对象
 === ":octicons-file-code-16: try\_except.py"
 
     ``` py
-    --8<-- "docs/python/sourcecode/13_try_except.py"
+    --8<-- "docs/script/python/sourcecode/13_try_except.py"
     ```
 
 ***
@@ -42,11 +42,11 @@ title: 面向对象
 === ":octicons-file-code-16: test\_my\_calculator.py"
 
     ``` py
-    --8<-- "docs/python/sourcecode/14_test_my_calculator.py"
+    --8<-- "docs/script/python/sourcecode/14_test_my_calculator.py"
     ```
 
 === ":octicons-file-code-16: mymodule.py"
 
     ``` py
-    --8<-- "docs/python/sourcecode/mymodule.py"
+    --8<-- "docs/script/python/sourcecode/mymodule.py"
     ```

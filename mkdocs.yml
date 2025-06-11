@@ -134,15 +134,26 @@ markdown_extensions:
 nav:
   - 主页: 
     - index.md
-    - 文档源代码结构: indexpage/skeleton.md
-    - 引用链接: indexpage/link.md
-    - 列表元素: indexpage/list.md
-    - 代码块元素: indexpage/code-block.md
-    - 网格元素: indexpage/grid.md
-    - 表格元素: indexpage/table.md
-    - 其他元素: indexpage/others.md
-  - Python:
-    - python/index.md
-    - 基本功能: python/short.md
-    - 面向对象: python/object.md
-    - 操作系统: python/os.md
+    - 主要元素: 
+      - 文档源代码结构: indexpage/skeleton.md
+      - 引用链接: indexpage/link.md
+      - 列表元素: indexpage/list.md
+    - 其他元素:
+      - 代码块元素: indexpage/code-block.md
+      - 网格元素: indexpage/grid.md
+      - 表格元素: indexpage/table.md
+      - 其他元素: indexpage/others.md
+  - 脚本语言:
+    - script/index.md
+    - Python: 
+      - script/python/index.md
+      - 基本功能: script/python/short.md
+      - 面向对象: script/python/object.md
+      - 操作系统: script/python/os.md
+    - Shell:
+      - script/shell/index.md
+      - 基本功能: script/shell/short.md
+  - Linux: 
+    - linux/index.md
+    - 基本工具:
+      - linux/base/index.md

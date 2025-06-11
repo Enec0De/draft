@@ -51,6 +51,11 @@ status: new
 目录
 ====
 
-- [Python][py]
+- [脚本语言][script]
 
-  [py]: python/index.md
+    - [Python][py]
+    - [Shell][sh]
+
+  [script]: script/index.md
+  [py]: script/python/index.md
+  [sh]: script/shell/index.md

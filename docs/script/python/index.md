@@ -2,7 +2,7 @@
 title: Python Home
 ---
 
-About me
+关于 Python
 ========
 
 随便贴贴代码，有空再结合自己的思考整理。
