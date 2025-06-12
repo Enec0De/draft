@@ -157,3 +157,11 @@ nav:
     - linux/index.md
     - 基本工具:
       - linux/base/index.md
+  - 网课:
+    - online-class/index.md
+    - TCCA: 
+      - online-class/TCCA/index.md
+      - 第一章: online-class/TCCA/chapter1.md
+    - 操作系统: 
+      - online-class/OS/index.md
+      - 绪论: online-class/OS/introduction.md
