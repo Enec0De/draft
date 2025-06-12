@@ -2,70 +2,90 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://enec0de.github.io/draft/</loc>
-         <lastmod>2025-06-11</lastmod>
+         <lastmod>2025-06-12</lastmod>
     </url>
     <url>
          <loc>https://enec0de.github.io/draft/indexpage/code-block/</loc>
-         <lastmod>2025-06-11</lastmod>
+         <lastmod>2025-06-12</lastmod>
     </url>
     <url>
          <loc>https://enec0de.github.io/draft/indexpage/grid/</loc>
-         <lastmod>2025-06-11</lastmod>
+         <lastmod>2025-06-12</lastmod>
     </url>
     <url>
          <loc>https://enec0de.github.io/draft/indexpage/link/</loc>
-         <lastmod>2025-06-11</lastmod>
+         <lastmod>2025-06-12</lastmod>
     </url>
     <url>
          <loc>https://enec0de.github.io/draft/indexpage/list/</loc>
-         <lastmod>2025-06-11</lastmod>
+         <lastmod>2025-06-12</lastmod>
     </url>
     <url>
          <loc>https://enec0de.github.io/draft/indexpage/others/</loc>
-         <lastmod>2025-06-11</lastmod>
+         <lastmod>2025-06-12</lastmod>
     </url>
     <url>
          <loc>https://enec0de.github.io/draft/indexpage/skeleton/</loc>
-         <lastmod>2025-06-11</lastmod>
+         <lastmod>2025-06-12</lastmod>
     </url>
     <url>
          <loc>https://enec0de.github.io/draft/indexpage/table/</loc>
-         <lastmod>2025-06-11</lastmod>
+         <lastmod>2025-06-12</lastmod>
     </url>
     <url>
          <loc>https://enec0de.github.io/draft/linux/</loc>
-         <lastmod>2025-06-11</lastmod>
+         <lastmod>2025-06-12</lastmod>
     </url>
     <url>
          <loc>https://enec0de.github.io/draft/linux/base/</loc>
-         <lastmod>2025-06-11</lastmod>
+         <lastmod>2025-06-12</lastmod>
+    </url>
+    <url>
+         <loc>https://enec0de.github.io/draft/online-class/</loc>
+         <lastmod>2025-06-12</lastmod>
+    </url>
+    <url>
+         <loc>https://enec0de.github.io/draft/online-class/OS/</loc>
+         <lastmod>2025-06-12</lastmod>
+    </url>
+    <url>
+         <loc>https://enec0de.github.io/draft/online-class/OS/introduction/</loc>
+         <lastmod>2025-06-12</lastmod>
+    </url>
+    <url>
+         <loc>https://enec0de.github.io/draft/online-class/TCCA/</loc>
+         <lastmod>2025-06-12</lastmod>
+    </url>
+    <url>
+         <loc>https://enec0de.github.io/draft/online-class/TCCA/chapter1/</loc>
+         <lastmod>2025-06-12</lastmod>
     </url>
     <url>
          <loc>https://enec0de.github.io/draft/script/</loc>
-         <lastmod>2025-06-11</lastmod>
+         <lastmod>2025-06-12</lastmod>
     </url>
     <url>
          <loc>https://enec0de.github.io/draft/script/python/</loc>
-         <lastmod>2025-06-11</lastmod>
+         <lastmod>2025-06-12</lastmod>
     </url>
     <url>
          <loc>https://enec0de.github.io/draft/script/python/object/</loc>
-         <lastmod>2025-06-11</lastmod>
+         <lastmod>2025-06-12</lastmod>
     </url>
     <url>
          <loc>https://enec0de.github.io/draft/script/python/os/</loc>
-         <lastmod>2025-06-11</lastmod>
+         <lastmod>2025-06-12</lastmod>
     </url>
     <url>
          <loc>https://enec0de.github.io/draft/script/python/short/</loc>
-         <lastmod>2025-06-11</lastmod>
+         <lastmod>2025-06-12</lastmod>
     </url>
     <url>
          <loc>https://enec0de.github.io/draft/script/shell/</loc>
-         <lastmod>2025-06-11</lastmod>
+         <lastmod>2025-06-12</lastmod>
     </url>
     <url>
          <loc>https://enec0de.github.io/draft/script/shell/short/</loc>
-         <lastmod>2025-06-11</lastmod>
+         <lastmod>2025-06-12</lastmod>
     </url>
 </urlset>
