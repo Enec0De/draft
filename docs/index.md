@@ -6,9 +6,8 @@ status: new
 关于主页 { #homepage }
 ======================
 
-> 文质彬彬，然后君子。
 
-*内容（质）与形式（文）是需要平衡的，应克制选择形式以服务内容。*
+**克制选择形式以服务内容，将自己暴露于不完美的实践当中。**
 
 ***
 
@@ -59,3 +58,19 @@ status: new
   [script]: script/index.md
   [py]: script/python/index.md
   [sh]: script/shell/index.md
+
+- [Linux][linux]
+
+    - [基本工具][base]
+
+  [linux]: linux/index.md
+  [base]: linux/base/index.md
+
+- [网课][class]
+
+    - [TCCA][tcca]
+    - [操作系统][os]
+
+  [class]: online-class/index.md
+  [tcca]: online-class/TCCA/index.md
+  [os]: online-class/OS/index.md

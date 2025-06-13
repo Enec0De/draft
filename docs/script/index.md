@@ -9,9 +9,6 @@ title: Script Home
 
 ***
 
-目录
-----
-
 - [Python][py]
 - [Shell][sh]
 

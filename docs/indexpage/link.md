@@ -19,7 +19,7 @@ title: 参考引用
 
 ***
 
-使用[链接][Hover me]，注意对齐缩进。
+使用[链接][Hover me]，文件使用相对路径，注意对齐缩进。
 
   [Hover me]: https://example.com "网站：example.com"
 

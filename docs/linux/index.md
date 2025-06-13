@@ -9,9 +9,6 @@ title: Linux Home
 
 ***
 
-目录
-----
-
 - [基本工具][base]
 
   [base]: base/index.md

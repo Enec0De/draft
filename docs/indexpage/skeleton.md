@@ -6,8 +6,6 @@ status: new
 个人文档代码规范
 ================
 
-> Entities should not be multiplied beyond necessity.
-
 ***
 
 基本骨架 { #skeleton }

@@ -16,7 +16,7 @@ title: 代码块
 === "Bash"
 
     ``` bash
-    $ printf "Hello World\n"
+    $ printf "%s\n" "Hello world"
     ```
 
 === "Python"
@@ -31,7 +31,7 @@ title: 代码块
 === "Bash"
 
     ``` bash
-    $ printf "Hello World\n"
+    $ printf "%s\n" "Hello world"
     ```
 
 === "Python"
@@ -42,9 +42,7 @@ title: 代码块
 
 </div>
 
-***
-
-代码块后紧跟下列代码，展示其渲染结果，[效果如上][out]：
+展示其渲染结果，[效果如上][out]，用如下代码包裹：
 
   [out]: #basic
 
@@ -56,9 +54,7 @@ title: 代码块
 </div>
 ```
 
-***
-
-标题、行号、高亮。
+使用标题、行号、高亮：
 
 === "Title"
 

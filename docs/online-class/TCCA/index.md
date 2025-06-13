@@ -1,16 +1,13 @@
 ---
-title: TCCA
+title: 关于 TCCA
 ---
 
-TCCA
+关于 TCCA
 ====
 
 考证
 
 ***
-
-目录
-----
 
 - [第一章][chapter1]
 

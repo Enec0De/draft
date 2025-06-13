@@ -7,20 +7,20 @@ title: 网格
 
 只需要使用带有 `grid` 类的 `div` 标签包裹一组区块，就可以将任意区块元素排列成网格布局。
 
+***
+
 !!! info 
 
     列表语法是卡片网格的快捷写法。
  
     > 对有序或无序的列表，该语法将其包裹于包含 `grid` 和 `cards` 两个类的 `div` 元素内。
 
-***
-
 列表语法 {grid-cards}
 ---------------------
 
-有两种写法。
+有两种写法：
 
-=== "Card Grid"
+=== ":octicons-file-code-16: `Card Grid`"
     ``` html linenums="1"
     <div class="grid cards" markdown>
     
@@ -32,7 +32,7 @@ title: 网格
     </div>
     ```
     
-=== "Generic Grid"
+=== ":octicons-file-code-16: `Generic Grid`"
     ``` html linenums="1"
     <div class="grid" markdown>
     
@@ -70,10 +70,10 @@ title: 网格
 !!! note
 
     两种写法等价，后者多用于组合不同类型的块。
+    
+    尽量不使用带有 `result` 类的 `div` 标签包裹网格元素。
 
-***
-
-每个卡片的内容可以不止一行。
+每个卡片的内容可以不止一行：
 
 ``` html linenums="1"
 <div class="grid cards" markdown>
@@ -122,7 +122,7 @@ title: 网格
 
 > **这是引用内容块** 
 
-=== "Content tab"
+=== ":octicons-file-code-16: `Content tab`"
 
     这是内容选项卡.
 
@@ -140,7 +140,7 @@ title: 网格
 
 > **这是引用内容块** 
 
-=== "Content tab"
+=== ":octicons-file-code-16: `Content tab`"
 
     这是内容选项卡.
 
