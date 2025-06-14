@@ -9,6 +9,6 @@ title: 关于操作系统
 
 ***
 
-- [绪论][intro]
+-   [绪论][intro]
 
   [intro]: introduction.md

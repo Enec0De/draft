@@ -42,7 +42,7 @@ theme:
   palette: 
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: light green
+      primary: cyan
       accent : amber
       toggle:
         icon: material/jellyfish
@@ -134,16 +134,16 @@ markdown_extensions:
 nav:
   - 主页: 
     - index.md
-    - 主要元素: 
+    - 基本元素: 
       - 文档源代码结构: indexpage/skeleton.md
       - 引用链接: indexpage/link.md
       - 列表元素: indexpage/list.md
-    - 其他元素:
+    - 扩展元素:
       - 代码块元素: indexpage/code-block.md
       - 网格元素: indexpage/grid.md
       - 表格元素: indexpage/table.md
       - 其他元素: indexpage/others.md
-  - 脚本语言:
+  - 编程语言:
     - script/index.md
     - Python: 
       - script/python/index.md

@@ -9,6 +9,6 @@ title: 关于 TCCA
 
 ***
 
-- [第一章][chapter1]
+-   [第一章][chapter1]
 
   [chapter1]: chapter1.md

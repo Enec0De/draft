@@ -24,10 +24,10 @@ title: 网格
     ``` html linenums="1"
     <div class="grid cards" markdown>
     
-    - :fontawesome-brands-linux: **Linux** for me
-    - :fontawesome-brands-markdown: **Markdown** for this draft
-    - :fontawesome-brands-bilibili: **Bilibili** for animate
-    - :fontawesome-brands-python: **Python** for math
+    -   :fontawesome-brands-linux: **Linux** for me
+    -   :fontawesome-brands-markdown: **Markdown** for this draft
+    -   :fontawesome-brands-bilibili: **Bilibili** for animate
+    -   :fontawesome-brands-python: **Python** for math
     
     </div>
     ```

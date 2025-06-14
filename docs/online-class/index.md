@@ -9,8 +9,8 @@ title: 课程及目标
 
 ***
 
-- [TCCA][TCCA]
-- [操作系统][OS]
+-   [TCCA][TCCA]
+-   [操作系统][OS]
 
   [TCCA]: TCCA/index.md
   [OS]: OS/index.md

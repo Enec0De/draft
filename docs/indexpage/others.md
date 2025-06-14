@@ -55,6 +55,10 @@ title: 其他元素
 数学公式 { #math }
 ------------------
 
-用的是 [KaTeX][katex]。
+**Fourier Transform:**
+$$
+\mathcal{F} \{f(t)\} (\omega) = \int_{-\infty}^{\infty} f(t) e^{-i\omega t} dt.
+$$
+用的是 [KaTeX][katex] 。
 
   [katex]: https://katex.org/

@@ -1,16 +1,16 @@
 ---
-title: Script Home
+title: Code Home
 ---
 
-脚本语言
+编程语言
 =======
 
 主要就是记录 **Python** 和 **Shell** 的用法，后者主要介绍 **Bash** 。
 
 ***
 
-- [Python][py]
-- [Shell][sh]
+-   [Python][py]
+-   [Shell][sh]
 
   [py]: python/index.md
   [sh]: shell/index.md

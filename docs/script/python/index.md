@@ -11,9 +11,9 @@ title: Python Home
 
 ***
 
-- [基本功能][short]
-- [面向对象][object]
-- [操作系统][os]
+-   [基本功能][short]
+-   [面向对象][object]
+-   [操作系统][os]
 
   [short]: short.md
   [object]: object.md

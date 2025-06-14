@@ -9,6 +9,6 @@ title: Shell Home
 
 ***
 
-- [基本功能][short]
+-   [基本功能][short]
 
   [short]: short.md
