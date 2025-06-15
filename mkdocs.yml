@@ -152,7 +152,8 @@ nav:
       - 操作系统: script/python/os.md
     - Shell:
       - script/shell/index.md
-      - 基本功能: script/shell/short.md
+      - 基本语法: script/shell/short.md
+      - 进阶: script/shell/advanced.md
   - Linux: 
     - linux/index.md
     - 基本工具:
@@ -165,3 +166,4 @@ nav:
     - 操作系统: 
       - online-class/OS/index.md
       - 绪论: online-class/OS/introduction.md
+      - 虚拟化: online-class/OS/virtualization.md

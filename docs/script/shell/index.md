@@ -9,6 +9,8 @@ title: Shell Home
 
 ***
 
--   [基本功能][short]
+-   [基本语法][short]
+-   [进阶][advanced]
 
   [short]: short.md
+  [advanced]: advanced.md

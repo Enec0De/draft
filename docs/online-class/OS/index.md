@@ -10,5 +10,7 @@ title: 关于操作系统
 ***
 
 -   [绪论][intro]
+-   [虚拟化][virtual]
 
   [intro]: introduction.md
+  [virtual]: virtualization.md
