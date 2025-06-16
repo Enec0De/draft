@@ -8,7 +8,7 @@ title: 基本语法
 简而言之，就是基本操作的简单示例。这是我们的第一个脚本：Hello World!
 
 ``` bash title="hello.sh"
---8<-- "docs/script/shell/sourcecode/hello.sh"
+--8<-- "shell/hello.sh"
 ```
 
 ***
@@ -26,7 +26,7 @@ title: 基本语法
 -   `-i`: 整数（integer）
 
 ``` bash title="var.sh"
---8<-- "docs/script/shell/sourcecode/var.sh"
+--8<-- "shell/var.sh"
 ```
 
 当前脚本的系统变量：

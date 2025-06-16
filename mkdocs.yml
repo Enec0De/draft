@@ -113,7 +113,8 @@ markdown_extensions:
   # - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.snippets:
-  #     auto_append:
+      base_path: src/
+  #     auto_append
   #       - includes/abbreviations.md
   - pymdownx.superfences:
       custom_fences:
@@ -135,35 +136,35 @@ nav:
   - 主页: 
     - index.md
     - 基本元素: 
-      - 文档源代码结构: indexpage/skeleton.md
-      - 引用链接: indexpage/link.md
-      - 列表元素: indexpage/list.md
+      - 文档源代码结构: fundamentals/document-structure.md
+      - 引用链接: fundamentals/links-and-references.md
+      - 列表元素: fundamentals/lists.md
     - 扩展元素:
-      - 代码块元素: indexpage/code-block.md
-      - 网格元素: indexpage/grid.md
-      - 表格元素: indexpage/table.md
-      - 其他元素: indexpage/others.md
+      - 代码块元素: fundamentals/code-blocks.md
+      - 网格元素: fundamentals/grid-layouts.md
+      - 表格元素: fundamentals/tables.md
+      - 其他元素: fundamentals/other-elements.md
   - 编程语言:
-    - script/index.md
+    - programming/index.md
     - Python: 
-      - script/python/index.md
-      - 基本功能: script/python/short.md
-      - 面向对象: script/python/object.md
-      - 操作系统: script/python/os.md
+      - programming/python/index.md
+      - 基本功能: programming/python/basics.md
+      - 面向对象: programming/python/object-oriented.md
+      - 操作系统: programming/python/system-interaction.md
     - Shell:
-      - script/shell/index.md
-      - 基本语法: script/shell/short.md
-      - 进阶: script/shell/advanced.md
+      - programming/shell-scripting/index.md
+      - 基本语法: programming/shell-scripting/basics.md
+      - 进阶: programming/shell-scripting/advanced-techniques.md
   - Linux: 
     - linux/index.md
     - 基本工具:
-      - linux/base/index.md
+      - linux/essential-tools/index.md
   - 网课:
-    - online-class/index.md
+    - courses/index.md
     - TCCA: 
-      - online-class/TCCA/index.md
-      - 第一章: online-class/TCCA/chapter1.md
+      - courses/tcca/index.md
+      - 第一章: courses/tcca/chapter1.md
     - 操作系统: 
-      - online-class/OS/index.md
-      - 绪论: online-class/OS/introduction.md
-      - 虚拟化: online-class/OS/virtualization.md
+      - courses/operating-systems/index.md
+      - 绪论: courses/operating-systems/introduction.md
+      - 虚拟化: courses/operating-systems/virtualization.md

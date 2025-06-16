@@ -13,25 +13,25 @@ title: 操作系统小玩具
 ***
 
 ``` py title="hello.py"
---8<-- "docs/script/python/sourcecode/hello.py"
+--8<-- "python/mini_os/hello.py"
 ```
 
 ***
 
 ``` py title="proc.py"
---8<-- "docs/script/python/sourcecode/proc.py"
+--8<-- "python/mini_os/proc.py"
 ```
 
 ***
 
 === "Without Comments"    
     ``` py linenums="1"
-    --8<-- "docs/script/python/sourcecode/os-model-without-comments.py"
+    --8<-- "python/mini_os/os-model-without-comments.py"
     ```
 
 === "With comments"
     ``` py linenums="1"
-    --8<-- "docs/script/python/sourcecode/os-model.py"
+    --8<-- "python/mini_os/os-model.py"
     ```
 
 ***

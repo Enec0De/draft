@@ -25,27 +25,27 @@ status: new
 
     ***
     
-    -   [文档源代码结构][skeleton]
-    -   [引用链接][link]
-    -   [列表元素][list]
+    -   [文档源代码结构][document-structure]
+    -   [引用链接][links-and-references]
+    -   [列表元素][lists]
     
-      [skeleton]: indexpage/skeleton.md
-      [link]: indexpage/link.md
-      [list]: indexpage/list.md
+      [document-structure]: fundamentals/document-structure.md
+      [links-and-references]: fundamentals/links-and-references.md
+      [lists]: fundamentals/lists.md
     
 -   :fontawesome-solid-hashtag: **扩展元素**
 
     ***
     
-    -   [代码块元素][code-block]
-    -   [网格元素][grid]
-    -   [表格元素][table]
-    -   [其他元素][others]
+    -   [代码块元素][code-blocks]
+    -   [网格元素][grid-layouts]
+    -   [表格元素][tables]
+    -   [其他元素][other-elements]
     
-      [code-block]: indexpage/code-block.md
-      [grid]: indexpage/grid.md
-      [table]: indexpage/table.md
-      [others]: indexpage/others.md
+      [code-blocks]: fundamentals/code-blocks.md
+      [grid-layouts]: fundamentals/grid-layouts.md
+      [tables]: fundamentals/tables.md
+      [other-elements]: fundamentals/other-elements.md
 
 </div>
 
@@ -61,29 +61,24 @@ status: new
 目录 { #toc }
 =============
 
--   :fontawesome-solid-code: [**编程语言**][script]
+-   :fontawesome-solid-code: [**编程语言**][programming]
 
-    主要内容涉及 [`Python`][py] 和 [`Shell`][sh]，后者主要在 Bash 中操作。
+    主要内容涉及 **Python** 和 **Shell Script**，后者主要在 Bash 中操作。
 
-      [script]: script/index.md
-      [py]: script/python/index.md
-      [sh]: script/shell/index.md
+      [programming]: programming/index.md
 
     ***
 
 -   :fontawesome-brands-linux: [**Linux**][linux]
 
-    目前的内容只涉及一些[基本工具][base]，有待完善。
+    目前的内容只涉及一些**基本工具**，有待完善。
 
       [linux]: linux/index.md
-      [base]: linux/base/index.md
 
     ***
 
 -   :fontawesome-solid-champagne-glasses: [**网课**][class]
 
-    正在看的一些网课视频，比如 [TCCA][tcca]，又比如[操作系统][os]。
+    正在看的一些网课视频，比如 **TCCA**，又比如**操作系统**。
 
-      [class]: online-class/index.md
-      [tcca]: online-class/TCCA/index.md
-      [os]: online-class/OS/index.md
+      [class]: courses/index.md

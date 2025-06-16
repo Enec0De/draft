@@ -9,6 +9,6 @@ title: Linux Home
 
 ***
 
--   [基本工具][base]
+-   [基本工具][essential-tools]
 
-  [base]: base/index.md
+  [essential-tools]: essential-tools/index.md
