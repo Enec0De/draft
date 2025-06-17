@@ -112,4 +112,4 @@ test.py::3
 
     `--8<--` 符号可以通过添加一个 `;` 的方式转义，即：`;--8<--`，文件也可以以同样的方式跳过。
 
-      [list]: list.md/#list-and-tab
+      [list]: lists.md/#list-and-tab
