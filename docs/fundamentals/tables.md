@@ -5,7 +5,11 @@ title: 表格
 表格 { #table }
 ===============
 
-***
+!!! warning ":octicons-hubot-16:"
+
+    考虑到 Markdown 表格在渲染中存在一些行为可控性方面的限制，建议降低表格元素的使用率，更好的解决办法是插入引用图片。
+
+---
 
 === ":material-format-align-left: Left"
 
@@ -76,10 +80,8 @@ title: 表格
 -   三种写法可以在同一表格中实现。
 -   超过 5 列或包含多行数据时，为保证可读性，建议改用 HTML 表格，这里不作详细展开。
 
-!!! info
+!!! info ":octicons-thumbsup-16:"
 
     上面关于图标和表情的应用可以从[这里][emojis]查阅。
-
-    考虑到 Markdown 表格在渲染中存在一些行为可控性方面的限制，建议降低表格元素的使用率，更好的解决办法是插入引用图片。
 
       [emojis]: https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/

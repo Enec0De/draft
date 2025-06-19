@@ -7,7 +7,7 @@ title: Linux Home
 
 记录一些基本的 Linux 工具。
 
-***
+---
 
 -   [基本工具][essential-tools]
 

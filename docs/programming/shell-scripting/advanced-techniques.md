@@ -7,7 +7,7 @@ Shell脚本进阶 { #advanced }
 
 主要讨论脚本结合使用 `find`、`sed`、`grep`、`awk` 命令。
 
-***
+---
 
 查找 `find` { #find }
 ---------------------

@@ -5,7 +5,7 @@ title: 其他元素
 其他元素 { #others }
 ====================
 
-***
+---
 
 警告框 { #admonitions }
 -----------------------
@@ -28,7 +28,7 @@ title: 其他元素
 
 </div>
 
-***
+---
 
 快捷键 { #shortcuts }
 ---------------------
@@ -43,14 +43,14 @@ title: 其他元素
 
 </div>
 
-!!! info
+!!! info ":octicons-report-16:"
     
     更多的快捷键可以在[官方文档][shortcuts]处指引的[扩展文档][extensions]内查询。
 
       [shortcuts]: https://squidfunk.github.io/mkdocs-material/reference/formatting/#adding-keyboard-keys
       [extensions]: https://facelessuser.github.io/pymdown-extensions/extensions/tilde/
 
-***
+---
 
 数学公式 { #math }
 ------------------

@@ -6,10 +6,9 @@ status: new
 前言 { #homepage }
 ==================
 
-
 :octicons-tag-24: **克制选择形式以服务内容，将自己暴露于不完美的实践当中。**
 
-***
+---
 
 这是一本“书”，其内容是我为自己知识定的锚，因此受众可能只有我自己，而且这本“书”各方面都相当**不完美**。首页不会写太多东西，比如，可能只有个[目录][toc]有用。
 
@@ -23,7 +22,7 @@ status: new
 
 -   :fontawesome-solid-hashtag: **基本元素**
 
-    ***
+    ---
     
     -   [文档源代码结构][document-structure]
     -   [引用链接][links-and-references]
@@ -35,7 +34,7 @@ status: new
     
 -   :fontawesome-solid-hashtag: **扩展元素**
 
-    ***
+    ---
     
     -   [代码块元素][code-blocks]
     -   [网格元素][grid-layouts]
@@ -56,7 +55,7 @@ status: new
 
   [guid]: https://github.com/sparanoid/chinese-copywriting-guidelines "中文文案排版指北"
 
-***
+---
 
 目录 { #toc }
 =============
@@ -67,7 +66,7 @@ status: new
 
       [programming]: programming/index.md
 
-    ***
+    ---
 
 -   :fontawesome-brands-linux: [**Linux**][linux]
 
@@ -75,7 +74,7 @@ status: new
 
       [linux]: linux/index.md
 
-    ***
+    ---
 
 -   :fontawesome-solid-champagne-glasses: [**网课**][class]
 

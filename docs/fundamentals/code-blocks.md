@@ -2,10 +2,10 @@
 title: 代码块
 ---
 
-代码块以及内容选项卡 { #code-and-content-tab }
+代码块以及内容选项卡 { #code-blocks }
 ============================================
 
-***
+---
 
 基本用法 { #basic }
 -------------------
@@ -42,16 +42,13 @@ title: 代码块
 
 </div>
 
+<span id="anchor" aria-hidden="true"></span>
 展示其渲染结果，[效果如上][out]，用如下代码包裹：
 
   [out]: #basic
 
-``` markdown linenums="1"
-<div class="result" markdown>
-
-...
-
-</div>
+``` markdown 
+<div class="result" markdown> ... </div>
 ```
 
 使用标题、行号、高亮：
@@ -88,17 +85,25 @@ title: 代码块
     ```
     ````
 
-***
+---
 
-嵌入外部文件 { #Embedding-external-files } 
+嵌入外部文件 { #embedding-external-files } 
 ------------------------------------------
 
 可执行文件的源代码可以直接导入，后面的两个冒号紧接数字，分别代表起始行和结束行。
 
-```` markdown linenums="1"
+单个文件导入：
+
+```` markdown
 ``` py
 ;--8<-- "test.py:4:6"
+```
+````
 
+多个文件导入：
+
+```` markdown
+``` py
 ;--8<--
 test.py::3
 ;--8<--
@@ -106,10 +111,14 @@ test.py::3
 ````
 
 
-!!! tip 
+!!! tip ":octicons-log-16:"
     
-    内容表格同样可以与其他内容连用，如[表格][list]。
+    内容表格同样可以与其他内容连用，如[列表元素][list]。
 
-    `--8<--` 符号可以通过添加一个 `;` 的方式转义，即：`;--8<--`，文件也可以以同样的方式跳过。
+    `--8<--` 符号可以通过添加一个 `;` 的方式转义，文件也可以以同样的方式跳过。
 
+    ``` markdown
+    ;;--8<--
+    ;--8<-- "; skip.md"
+    ```
       [list]: lists.md/#list-and-tab

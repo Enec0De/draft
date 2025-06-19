@@ -5,24 +5,24 @@ title: 操作系统小玩具
 操作系统小玩具
 ==============
 
-***
+---
 
 主程序部分
 ----------
 
-***
+---
 
 ``` py title="hello.py"
 --8<-- "python/mini_os/hello.py"
 ```
 
-***
+---
 
 ``` py title="proc.py"
 --8<-- "python/mini_os/proc.py"
 ```
 
-***
+---
 
 === "Without Comments"    
     ``` py linenums="1"
@@ -34,7 +34,7 @@ title: 操作系统小玩具
     --8<-- "python/mini_os/os-model.py"
     ```
 
-***
+---
 
 对程序的思考
 ------------
@@ -80,4 +80,4 @@ def main():
 
 ```
 
-***
+---

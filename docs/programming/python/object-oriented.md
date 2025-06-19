@@ -7,7 +7,7 @@ title: 面向对象
 
 从这里开始有“类”和“对象”，以及文件操作和测试相关。
 
-***
+---
 
 `class`
 -------
@@ -18,7 +18,7 @@ title: 面向对象
     --8<-- "python/11_class_oop.py"
     ```
 
-***
+---
 
 `file`
 ------
@@ -29,7 +29,7 @@ title: 面向对象
     --8<-- "python/12_file_handling.py"
     ```
 
-***
+---
 
 === ":octicons-file-code-16: 13_try_except.py"
 
@@ -37,7 +37,7 @@ title: 面向对象
     --8<-- "python/13_try_except.py"
     ```
 
-***
+---
 
 === ":octicons-file-code-16: 14_calculator_test.py"
 

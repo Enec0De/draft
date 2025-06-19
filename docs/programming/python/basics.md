@@ -7,7 +7,7 @@ title: 基本功能
 
 简而言之，就是基本操作的简单示例。
 
-***
+---
 
 `print`
 -------
@@ -18,7 +18,7 @@ title: 基本功能
     --8<-- "python/01_print_basics.py"
     ```
 
-***
+---
 
 `math`
 ------
@@ -29,7 +29,7 @@ title: 基本功能
     --8<-- "python/02_math_operations.py"
     ```
 
-***
+---
 
 `logic`
 -------
@@ -40,7 +40,7 @@ title: 基本功能
     --8<-- "python/03_boolean_logic.py"
     ```
 
-***
+---
 
 `list`
 ------
@@ -51,7 +51,7 @@ title: 基本功能
     --8<-- "python/04_list_operations.py"
     ```
 
-***
+---
 
 `dictionary`
 ------------
@@ -62,7 +62,7 @@ title: 基本功能
     --8<-- "python/05_dictionary_usage.py"
     ```
 
-***
+---
 
 `for`
 -----
@@ -73,7 +73,7 @@ title: 基本功能
     --8<-- "python/06_for_loops.py"
     ```
 
-***
+---
 
 `while`
 -------
@@ -84,7 +84,7 @@ title: 基本功能
     --8<-- "python/07_while_loops.py"
     ```
 
-***
+---
 
 `format`
 --------
@@ -95,7 +95,7 @@ title: 基本功能
     --8<-- "python/08_string_formatting.py"
     ```
 
-***
+---
 
 `function`
 ----------
@@ -106,7 +106,7 @@ title: 基本功能
     --8<-- "python/09_functions.py"
     ```
 
-***
+---
 
 `import`
 --------

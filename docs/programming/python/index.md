@@ -9,7 +9,7 @@ title: Python Home
 
 目标：知识点放进代码注释
 
-***
+---
 
 -   [基本功能][basics]
 -   [面向对象][object-oriented]

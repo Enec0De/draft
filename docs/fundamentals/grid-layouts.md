@@ -7,13 +7,11 @@ title: 网格
 
 只需要使用带有 `grid` 类的 `div` 标签包裹一组区块，就可以将任意区块元素排列成网格布局。
 
-***
+---
 
-!!! info 
+!!! info ":octicons-comment-discussion-16:"
 
     列表语法是卡片网格的快捷写法。
- 
-    > 对有序或无序的列表，该语法将其包裹于包含 `grid` 和 `cards` 两个类的 `div` 元素内。
 
 列表语法 {grid-cards}
 ---------------------
@@ -67,11 +65,9 @@ title: 网格
 
 </div>
 
-!!! note
+!!! note ":octicons-pin-16:"
 
-    两种写法等价，后者多用于组合不同类型的块。
-    
-    尽量不使用带有 `result` 类的 `div` 标签包裹网格元素。
+    两种写法等价，后者多用于组合不同类型的块。尽量不使用带有 `result` 类的 `div` 标签包裹网格元素。
 
 每个卡片的内容可以不止一行：
 
@@ -80,13 +76,13 @@ title: 网格
 
 -   :fontawesome-brands-linux: **Linux** for me
    
-    ***
+    ---
    
     [:octicons-arrow-right-24: Learn More](https://www.kernel.org/)
 
 -   :fontawesome-brands-python: **Python** for math
 
-    ***
+    ---
 
     [:octicons-arrow-right-24: Learn More](https://www.python.org/)
 
@@ -97,19 +93,19 @@ title: 网格
 
 -   :fontawesome-brands-linux: **Linux** for me
    
-    ***
+    ---
    
     [:octicons-arrow-right-24: Learn More](https://www.kernel.org/)
 
 -   :fontawesome-brands-python: **Python** for math
 
-    ***
+    ---
 
     [:octicons-arrow-right-24: Learn More](https://www.python.org/)
 
 </div>
 
-***
+---
 
 通用网格 { #generic-grd }
 -------------------------
@@ -150,11 +146,11 @@ title: 网格
 
 </div>
 
-!!! note
+!!! note ":octicons-pin-16:"
 
     尽量避免多层、不同块的嵌套。
 
-!!! warning
+!!! warning ":octicons-hubot-16:"
 
     我们约定，通用网格内只使用：卡片、引用、代码块、内容选项卡。
     
