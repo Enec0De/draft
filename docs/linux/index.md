@@ -9,6 +9,8 @@ title: Linux Home
 
 ---
 
--   [基本工具][essential-tools]
+-   :fontawesome-regular-face-grin-tongue-squint: **基础工具**
 
-  [essential-tools]: essential-tools/index.md
+    -   [常用][essential-tools]
+
+      [essential-tools]: essential-tools/tools.md

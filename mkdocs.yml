@@ -95,6 +95,7 @@ markdown_extensions:
   - md_in_html
   - toc:
       permalink: true
+      toc_depth: 3
   - pymdownx.arithmatex:
       generic: true
   # - pymdownx.betterem:
@@ -147,22 +148,19 @@ nav:
   - 编程语言:
     - programming/index.md
     - Python: 
-      - programming/python/index.md
       - 基本功能: programming/python/basics.md
       - 面向对象: programming/python/object-oriented.md
       - 操作系统: programming/python/system-interaction.md
     - Shell:
-      - programming/shell-scripting/index.md
       - 基本语法: programming/shell-scripting/basics.md
-      - 进阶: programming/shell-scripting/advanced-techniques.md
+      # - 进阶: programming/shell-scripting/advanced-techniques.md
   - Linux: 
     - linux/index.md
-    - 基本工具:
-      - linux/essential-tools/index.md
+    - 基础工具:
+      - 常用: linux/essential-tools/tools.md
   - 网课:
     - courses/index.md
     - TCCA: 
-      - courses/tcca/index.md
       - 云计算概述: courses/tcca/01-Cloud-Overview.md
       - 计算服务之云服务器: courses/tcca/02-CVM-Service.md
       - 计算服务之容器技术: courses/tcca/03-Compute-Container-Tech.md
@@ -172,6 +170,5 @@ nav:
       - 云安全服务: courses/tcca/07-Security-Service.md
 
     - 操作系统: 
-      - courses/operating-systems/index.md
       - 绪论: courses/operating-systems/introduction.md
       - 虚拟化: courses/operating-systems/virtualization.md

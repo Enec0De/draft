@@ -5,9 +5,11 @@ title: 表格
 表格 { #table }
 ===============
 
-!!! warning ":octicons-hubot-16:"
+!!! warning ":octicons-checkbox-16: 放在开头"
 
-    考虑到 Markdown 表格在渲染中存在一些行为可控性方面的限制，建议降低表格元素的使用率，更好的解决办法是插入引用图片。
+    :octicons-tools-24: 考虑到 Markdown 表格在渲染中存在一些行为可控性方面的限制，建议降低表格元素的使用率[^1]。
+
+[^1]: 更好的解决办法是插入引用图片。
 
 ---
 

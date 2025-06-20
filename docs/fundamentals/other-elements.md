@@ -5,6 +5,8 @@ title: 其他元素
 其他元素 { #others }
 ====================
 
+:octicons-dependabot-24: 一些比较简单的东西，凑在一页。
+
 ---
 
 警告框 { #admonitions }

@@ -9,8 +9,21 @@ title: Code Home
 
 ---
 
--   [Python][py]
--   [Shell Script][sh]
+-   :fontawesome-brands-python: **Python**
 
-  [py]: python/index.md
-  [sh]: shell-scripting/index.md
+    -   [基础内容][pybase]
+    -   [面向对象][obj]
+    -   [操作系统][sys]
+
+      [pybase]: python/basics.md
+      [obj]: python/object-oriented.md
+      [sys]: python/system-interaction.md
+
+    ---
+
+-   :fontawesome-solid-code: **Shell Script**
+
+    -   [基本语法][shbase]
+
+      [shbase]: shell-scripting/basics.md
+
