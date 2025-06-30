@@ -10,8 +10,6 @@ title: 操作系统小玩具
 主程序部分
 ----------
 
----
-
 ``` py title="hello.py"
 --8<-- "python/mini_os/hello.py"
 ```

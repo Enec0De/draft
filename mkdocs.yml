@@ -64,7 +64,7 @@ theme:
 plugins:
   - search:
       lang: zh
-      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+      # separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - minify:
       minify_html: true
 
@@ -134,12 +134,11 @@ markdown_extensions:
 
 # Page tree
 nav:
-  - 主页: 
-    - index.md
-    - 基本元素: 
-      - 文档源代码结构: fundamentals/document-structure.md
-      - 引用链接: fundamentals/links-and-references.md
-      - 列表元素: fundamentals/lists.md
+  - 主页: index.md
+  - 文档规范: 
+    - 文档源代码结构: fundamentals/document-structure.md
+    - 引用链接: fundamentals/links-and-references.md
+    - 列表元素: fundamentals/lists.md
     - 扩展元素:
       - 代码块元素: fundamentals/code-blocks.md
       - 网格元素: fundamentals/grid-layouts.md

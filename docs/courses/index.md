@@ -7,6 +7,8 @@ title: 课程及目标
 
 目前正在学习的东西。
 
+> 笔记里像这样引用的部分可以问 AI。
+
 ---
 
 -   :fontawesome-solid-person-digging: **TCCA**

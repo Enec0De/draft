@@ -1,23 +1,19 @@
 ---
-title: 首页
 status: new
 ---
 
 前言 { #homepage }
 ==================
 
-> *:octicons-tag-24: "Premature optimization is the root of all evil."* 
+> :octicons-tag-24: "Premature optimization is the root of all evil." 
 > —  **Donald Knuth**
 
 ---
 
-这是一本受众仅为我自己的知识手册，而且各种意义上都是**不完美**的，非必须的情况，不保证会优化。首页不会写太多东西，比如，可能只有个[目录][toc]有用。
+这是一本受众仅为我自己的知识手册，内容写着玩的，**并非完美**，也不保证会去优化。
 
-  [toc]: #toc
 
-我想把更多的重心，放于知识的整理和创作，而不是内容呈现的形式。克制选择形式以服务内容，将自己暴露于不完美的实践当中，从而有了这些东西。
-
-:octicons-repo-24: 下面是我为自己写作定制的标准与规范：
+:octicons-repo-24: 我自己写作的标准与规范：
 
 <div class="grid cards" markdown>
 
@@ -49,10 +45,11 @@ status: new
 
 </div>
 
-写作尽量遵循K.I.S.S原则[^1]和奥卡姆剃刀[^2]，部分参考[这个指南][guid]。
+写作尽量遵循K.I.S.S原则[^1]和奥卡姆剃刀[^2]，部分参考[这个指南][guid][^3]。
 
 [^1]: Keep It Simple, Stupid.
 [^2]: Entities should not be multiplied beyond necessity.
+[^3]: 也不一定采用其中的内容，看心情。
 
   [guid]: https://github.com/sparanoid/chinese-copywriting-guidelines "中文文案排版指北"
 
