@@ -1,11 +1,11 @@
 @font-face {
-  font-family: "LXGWMono";
+  font-family: "Xihei";
   src:
-    url("../assets/fonts/LXGWWenKaiMonoLite-Medium.woff2");
+    url("../assets/fonts/NeoXiHeiCode-Regular.woff2");
   font-display: swap; 
 }
 
 :root {
-  --md-text-font: "LXGWMono";
-  --md-code-font: "LXGWMono";
+  --md-text-font: "Xihei";
+  --md-code-font: "Xihei";
 }
