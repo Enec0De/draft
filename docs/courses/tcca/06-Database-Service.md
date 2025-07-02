@@ -47,7 +47,7 @@ title: 云数据库服务
 
 ### 1.3. 关系型数据库简介
 
-**数据库及数据库实例：
+**数据库及数据库实例：**
 
 -   > 什么是数据库
 -   > 什么是数据库实例？
@@ -209,6 +209,138 @@ title: 云数据库服务
 
 ### 3.1. 内存数据库 Redis
 
+**Redis 简介：**
+
+> 什么是 Redis？Redis 的功能特性有哪些？
+
+**Redis 应用场景：**
+
+-   缓存（Cache）
+-   会话存储（Session）
+-   发布订阅（Pub/Sub）
+-   排行榜（Rank/Leaderboard）
+
+**Redis 演进过程：**
+
+单机 Redis - 持久化 - 主从复制 - 哨兵系统 - 读写分离 - 分片集群 - Redis Cluster - 代理层 - 多线程
+
+**Redis 架构原理：**
+
+-   代理层
+-   分片集群
+-   哨兵系统
+-   路由机制
+
+> 了解 Redis 架构原理。
+
+**Redis 读写分离：**
+
+> 了解读写分离的基本原理。
+
+**Redis 数据持久化：**
+
+-   AOF
+-   RDB
+-   混合持久化
+
+**过期策略和淘汰机制：**
+
+-   过期策略：定期删除、惰性删除
+-   淘汰机制：6种
+
+**Redis 数据类型：**
+
+-   strings
+-   linked lists
+-   sets of strings
+-   sorted sets of strings
+-   hash tables
+
+**Redis 基础操作：**
+
+-   常用操作命令：
+
+    `info`, `select`, `dbsize`, `keys *`, `type key`, `flushdb`, `flushall`,
+    `exists key`, `del key1 key2`, `randomkey`, `rename oldkey newkey`, `renamenx oldkey newkey`,
+    `expire key seconds`, `ttl key`
+
+-   String 基本操作：
+
+    `set key value`, `get key`, `mset key1 value1 ... keyN valueN`, `mget key1 ... keyN`,
+    `incr key`, `decr key`, `flushall`, `incrby key integer`, `decrby key integer`
+
+-   List 基本操作：
+
+    `lpush key string`, `rpush key sting`, `llen key`, `lrange key start end`, `ltrim key start end`,
+    `lset key index value`, `lrem key count value`, `lpop key`, `rpop key` 
+
+-   Set 基本操作：
+
+    `sadd key member`, `smembers key`, `srem key member`, `spop key`, `srandmember key`, 
+    `smove srckey dstkey member`, `scard key`, `sismember key member`
+
 ### 3.2. 文档数据库 MongoDB
 
+**MongoDB 简介：**
+
+> 什么是 MongoDB？MongoDB 的功能特性有哪些？
+
+**MongoDB 的特点：**
+
+-   易扩展性
+-   高性能
+-   高伸缩性
+-   存储动态性
+-   速度与持久型
+
+**MongoDB 的相关概念：**
+
+存储结构：
+
+-   文档
+-   集合
+-   数据库
+
+**MongoDB 的副本集架构：**
+
+-   数据多副本
+-   只有 Primary 是可读可写的
+-   读写分离
+-   节点直接互有心跳
+
+**MongoDB 常见数据类型：**
+
+-   object id
+-   string
+-   boolean
+-   integer
+-   double
+-   arrays
+-   object
+-   null
+-   timestamp
+-   date
+
+**MongoDB 的常见操作：**
+
+-   数据库基本操作：
+
+    `show database`, `use database`, `db.dropDatabase()`,
+    
+-   集合基本操作：
+
+    `show collections`, `db.createCollection("集合名称")`, `db.集合名称.drop()`
+
+-   文档基本操作：
+
+    `db.collection.insert({key1:value1,key2:value2})`,
+    `db.collection.update({key1:value1,key2:value2})`,
+    `db.collection.find()`,
+    `db.collection.deleteMany({})`,
+    `db.collection.remove({})`,
+    `db.collection.deleteOne({key:value})`,
+    `db.collection.createIndex(keys,option)`
+
 ### 3.3. 腾讯云 NoSQL
+
+看文档。
