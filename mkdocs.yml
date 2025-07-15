@@ -136,9 +136,11 @@ markdown_extensions:
 nav:
   - 主页: index.md
   - 文档规范: 
-    - 文档源代码结构: fundamentals/document-structure.md
-    - 引用链接: fundamentals/links-and-references.md
-    - 列表元素: fundamentals/lists.md
+    - fundamentals/index.md
+    - 基本元素:
+      - 文档源代码结构: fundamentals/document-structure.md
+      - 引用链接: fundamentals/links-and-references.md
+      - 列表元素: fundamentals/lists.md
     - 扩展元素:
       - 代码块元素: fundamentals/code-blocks.md
       - 网格元素: fundamentals/grid-layouts.md

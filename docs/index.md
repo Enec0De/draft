@@ -10,53 +10,25 @@ status: new
 
 ---
 
-这是一本受众仅为我自己的知识手册，内容写着玩的，**并非完美**，也不保证会去优化。
-
-
-:octicons-repo-24: 我自己写作的标准与规范：
-
-<div class="grid cards" markdown>
-
--   :fontawesome-solid-hashtag: **基本元素**
-
-    ---
-    
-    -   [文档源代码结构][document-structure]
-    -   [引用链接][links-and-references]
-    -   [列表元素][lists]
-    
-      [document-structure]: fundamentals/document-structure.md
-      [links-and-references]: fundamentals/links-and-references.md
-      [lists]: fundamentals/lists.md
-    
--   :fontawesome-solid-hashtag: **扩展元素**
-
-    ---
-    
-    -   [代码块元素][code-blocks]
-    -   [网格元素][grid-layouts]
-    -   [表格元素][tables]
-    -   [其他元素][other-elements]
-    
-      [code-blocks]: fundamentals/code-blocks.md
-      [grid-layouts]: fundamentals/grid-layouts.md
-      [tables]: fundamentals/tables.md
-      [other-elements]: fundamentals/other-elements.md
-
-</div>
-
-写作尽量遵循K.I.S.S原则[^1]和奥卡姆剃刀[^2]，部分参考[这个指南][guid][^3]。
+这是一本受众仅为我自己的知识手册，写着玩的，**并非完美**。开头的引用是随便选的，没有特殊意义。写作可能会遵循K.I.S.S原则[^1]和奥卡姆剃刀[^2]（吧？），部分参考[这个指南][guid][^3]。
 
 [^1]: Keep It Simple, Stupid.
 [^2]: Entities should not be multiplied beyond necessity.
 [^3]: 也不一定采用其中的内容，看心情。
 
+*[吧]: 我这句废话放在这里显然就没有遵守这些原则。
+
   [guid]: https://github.com/sparanoid/chinese-copywriting-guidelines "中文文案排版指北"
 
----
+***索引目录：***
 
-目录 { #toc }
-=============
+-   :octicons-repo-24: [**文档规范**][fundamentals]
+
+    介绍了这个文档是怎么撰写的。
+
+      [fundamentals]: fundamentals/index.md
+
+    ---
 
 -   :fontawesome-solid-code: [**编程语言**][programming]
 
