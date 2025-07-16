@@ -1,5 +1,6 @@
 ---
 title: 云计算概述
+status: deprecated
 ---
 
 云计算概述

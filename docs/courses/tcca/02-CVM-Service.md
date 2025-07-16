@@ -1,5 +1,6 @@
 ---
 title: 云服务器
+status: deprecated
 ---
 
 计算服务之云服务器 { #cvm-service }

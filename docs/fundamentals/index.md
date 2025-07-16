@@ -9,6 +9,8 @@ title: 文档规范
 
 ---
 
+这些内容虽然分为了“基本元素”和“扩展元素”两类，但使用起来并没有真正意义上的优先级，只是为了方便查阅。合理地按需使用即可。
+
 <div class="grid cards" markdown>
 
 -   :fontawesome-solid-hashtag: **基本元素**

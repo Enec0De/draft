@@ -154,11 +154,13 @@ nav:
       - 操作系统: programming/python/system-interaction.md
     - Shell:
       - 基本语法: programming/shell-scripting/basics.md
-      # - 进阶: programming/shell-scripting/advanced-techniques.md
+      - 进阶: programming/shell-scripting/advanced-techniques.md
   - Linux: 
     - linux/index.md
     - 基础工具:
       - 常用: linux/essential-tools/tools.md
+    - Debian 参考手册:
+      - GNU/Linux 教程: linux/debian/tutorials.md
   - 网课:
     - courses/index.md
     - TCCA: 

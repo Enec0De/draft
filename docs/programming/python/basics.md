@@ -9,8 +9,7 @@ title: 基本功能
 
 ---
 
-`print`
--------
+`print`:
 
 === ":octicons-file-code-16: 01_print_basics.py"
 
@@ -18,10 +17,7 @@ title: 基本功能
     --8<-- "python/01_print_basics.py"
     ```
 
----
-
-`math`
-------
+`math`:
 
 === ":octicons-file-code-16: 02_math_operations.py"
 
@@ -29,10 +25,7 @@ title: 基本功能
     --8<-- "python/02_math_operations.py"
     ```
 
----
-
-`logic`
--------
+`logic`:
 
 === ":octicons-file-code-16: 03_boolean_logic.py"
 
@@ -40,10 +33,7 @@ title: 基本功能
     --8<-- "python/03_boolean_logic.py"
     ```
 
----
-
-`list`
-------
+`list`:
 
 === ":octicons-file-code-16: 04_list_operations.py"
 
@@ -51,10 +41,7 @@ title: 基本功能
     --8<-- "python/04_list_operations.py"
     ```
 
----
-
-`dictionary`
-------------
+`dictionary`:
 
 === ":octicons-file-code-16: 05_dictionary_usage.py"
 
@@ -62,10 +49,7 @@ title: 基本功能
     --8<-- "python/05_dictionary_usage.py"
     ```
 
----
-
-`for`
------
+`for`:
 
 === ":octicons-file-code-16: 06_for_loops.py"
 
@@ -73,10 +57,7 @@ title: 基本功能
     --8<-- "python/06_for_loops.py"
     ```
 
----
-
-`while`
--------
+`while`:
 
 === ":octicons-file-code-16: 07_while_loops.py"
 
@@ -84,10 +65,7 @@ title: 基本功能
     --8<-- "python/07_while_loops.py"
     ```
 
----
-
-`format`
---------
+`format`:
 
 === ":octicons-file-code-16: 08_string_formatting.py"
 
@@ -95,10 +73,7 @@ title: 基本功能
     --8<-- "python/08_string_formatting.py"
     ```
 
----
-
-`function`
-----------
+`function`:
 
 === ":octicons-file-code-16: 09_functions.py"
 
@@ -106,10 +81,7 @@ title: 基本功能
     --8<-- "python/09_functions.py"
     ```
 
----
-
-`import`
---------
+`import`:
 
 === ":octicons-file-code-16:10_module_imports.py"
 

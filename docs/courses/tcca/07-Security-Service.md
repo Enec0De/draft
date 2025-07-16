@@ -1,5 +1,6 @@
 ---
 title: 云安全服务
+status: deprecated
 ---
 
 云安全服务

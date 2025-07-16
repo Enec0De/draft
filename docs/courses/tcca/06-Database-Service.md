@@ -1,5 +1,6 @@
 ---
 title: 云数据库服务
+status: deprecated
 --- 
 
 云数据库服务

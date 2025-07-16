@@ -14,3 +14,11 @@ title: Linux Home
     -   [常用][essential-tools]
 
       [essential-tools]: essential-tools/tools.md
+
+    ---
+
+-   :fontawesome-brands-debian: **Debian 参考手册**
+
+    -   [GNU/Linux 教程][tutorials]
+
+      [tutorials]: debian/tutorials.md

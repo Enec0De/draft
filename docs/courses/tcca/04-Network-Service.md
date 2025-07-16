@@ -1,5 +1,6 @@
 ---
 title: 云网络服务
+status: deprecated
 ---
 
 云网络服务

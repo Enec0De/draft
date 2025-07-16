@@ -9,8 +9,7 @@ title: 面向对象
 
 ---
 
-`class`
--------
+`class`:
 
 === ":octicons-file-code-16: 11_class_oop.py"
 
@@ -18,10 +17,7 @@ title: 面向对象
     --8<-- "python/11_class_oop.py"
     ```
 
----
-
-`file`
-------
+`file`:
 
 === ":octicons-file-code-16: 12_file_handling.py"
 
@@ -29,7 +25,7 @@ title: 面向对象
     --8<-- "python/12_file_handling.py"
     ```
 
----
+`try_except`:
 
 === ":octicons-file-code-16: 13_try_except.py"
 
@@ -37,7 +33,7 @@ title: 面向对象
     --8<-- "python/13_try_except.py"
     ```
 
----
+`test`:
 
 === ":octicons-file-code-16: 14_calculator_test.py"
 

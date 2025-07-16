@@ -1,5 +1,6 @@
 ---
 title: 容器技术
+status: deprecated
 ---
 
 计算服务之容器技术

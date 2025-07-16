@@ -5,26 +5,44 @@ status: new
 前言 { #homepage }
 ==================
 
-> :octicons-tag-24: "Premature optimization is the root of all evil." 
-> —  **Donald Knuth**
+> :octicons-tag-24: "Premature optimization is the root of all evil." —  **Donald Knuth**
 
 ---
 
-这是一本受众仅为我自己的知识手册，写着玩的，**并非完美**。开头的引用是随便选的，没有特殊意义。写作可能会遵循K.I.S.S原则[^1]和奥卡姆剃刀[^2]（吧？），部分参考[这个指南][guid][^3]。
+随便写点什么
+------------
 
+这是一本笔记，不知所起，随性而为，只是为了让我不长记性的记性长点记性。从头到尾都是随便地写点东西，然后随便地列进去。如果你碰巧读到这本笔记，当个乐子看就好，***作者不为其中任何内容负责***。
+
+这本笔记包含：
+    
+-   写着玩的
+-   **并非完美**
+-   没有意义
+-   逃兵    
+-   「可能」「会」「遵循」：K.I.S.S原则[^1]、奥卡姆剃刀[^2]
+-   部分参考[这个指南][guid]。
+    
 [^1]: Keep It Simple, Stupid.
 [^2]: Entities should not be multiplied beyond necessity.
-[^3]: 也不一定采用其中的内容，看心情。
 
-*[吧]: 我这句废话放在这里显然就没有遵守这些原则。
-
+*[并非完美]: 指拼尽全力无法优化
+*[没有意义]: 指满篇的胡言乱语
+*[逃兵]: 指写到一半，然后唐突摸了
+*[可能]: 或许没可能
+*[会]: 也可能不会
+*[遵循]: 但话又说回来，没准还真会
+    
   [guid]: https://github.com/sparanoid/chinese-copywriting-guidelines "中文文案排版指北"
 
-***索引目录：***
+---
+
+笔记索引与简介
+------------------
 
 -   :octicons-repo-24: [**文档规范**][fundamentals]
 
-    介绍了这个文档是怎么撰写的。
+    介绍了这个文档是如何撰写的。
 
       [fundamentals]: fundamentals/index.md
 
@@ -32,7 +50,7 @@ status: new
 
 -   :fontawesome-solid-code: [**编程语言**][programming]
 
-    主要内容涉及 **Python** 和 **Shell Script**，后者主要在 Bash 中操作。
+    主要内容涉及 **Python** 和 **Shell Script**。
 
       [programming]: programming/index.md
 
@@ -40,7 +58,7 @@ status: new
 
 -   :fontawesome-brands-linux: [**Linux**][linux]
 
-    目前的内容只涉及一些**基本工具**，有待完善。
+    涉及一些**基本工具**，以及对不同 Linux 发行版**参考手册**的学习。
 
       [linux]: linux/index.md
 
@@ -48,6 +66,6 @@ status: new
 
 -   :fontawesome-solid-champagne-glasses: [**网课**][class]
 
-    正在看的一些网课视频，比如 **TCCA**，又比如**操作系统**。
+    正在学习的一些网络课程视频和行业认证。
 
       [class]: courses/index.md

@@ -1,5 +1,6 @@
 ---
 title: 云存储服务
+status: deprecated
 ---
 
 云存储服务
