@@ -14,13 +14,9 @@ title: 操作系统小玩具
 --8<-- "python/mini_os/hello.py"
 ```
 
----
-
 ``` py title="proc.py"
 --8<-- "python/mini_os/proc.py"
 ```
-
----
 
 === "Without Comments"    
     ``` py linenums="1"
@@ -78,4 +74,3 @@ def main():
 
 ```
 
----
