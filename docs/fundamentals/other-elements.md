@@ -50,7 +50,7 @@ title: 其他元素
     更多的快捷键可以在[官方文档][shortcuts]处指引的[扩展文档][extensions]内查询。
 
       [shortcuts]: https://squidfunk.github.io/mkdocs-material/reference/formatting/#adding-keyboard-keys
-      [extensions]: https://facelessuser.github.io/pymdown-extensions/extensions/tilde/
+      [extensions]: https://facelessuser.github.io/pymdown-extensions/extensions/keys/#extendingmodifying-key-map-index
 
 ---
 

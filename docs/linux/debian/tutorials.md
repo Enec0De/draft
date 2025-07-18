@@ -120,17 +120,17 @@ GNU/Linux 教程
     -   Set Group ID（SGID）位
     -   Sticky（粘滞）位
 
-详细用法参考文档，这里提供一些基本用法的示例：
+-   详细用法参考文档，这里提供一些基本用法的示例：
 
-``` bash
-ls -alh            # 显示隐藏文件、详细信息、人类可读
-chown newowner foo # 给 foo 文件设置所有者
-chown newgroup foo # 给 foo 文件设置所属组
-chmod a+x foo      # 给 foo 文件添加权限 x
-chmod 600 foo      # 给 foo 文件设置权限 rw- --- ---
-chmod 1755 tmp     # 给 tmp 文件夹设置权限 rwx r-x r-t
-chmod 1754 tmp     # 给 tmp 文件夹设置权限 rwx r-x r-T
-```
+    ``` bash
+    ls -alh              # 显示隐藏文件、详细信息、人类可读
+    chown newowner foo   # 给 foo 文件设置所有者
+    chown newgroup foo   # 给 foo 文件设置所属组
+    chmod a+x foo        # 给 foo 文件添加权限 x
+    chmod 600 foo        # 给 foo 文件设置权限 rw- --- ---
+    chmod 1755 tmp       # 给 tmp 文件夹设置权限 rwx r-x r-t
+    chmod 1754 tmp       # 给 tmp 文件夹设置权限 rwx r-x r-T
+    ```
 
 !!! tip "提示"
 
@@ -181,3 +181,135 @@ chmod 1754 tmp     # 给 tmp 文件夹设置权限 rwx r-x r-T
 
     你需要属于 **dialout** 组才能重配置调制解调器、拨号到任意地方，等等。但如果 **root** 用户在 `/etc/ppp/peers/` 为受信任点创建了预定义配置文件的话，你只需要属于
     **dip** 组，就可以创建拨号 IP 来连接到那些受信任的点上，需使用的命令行工具包括 `pppd(8)`、`pon(1)` 以及 `poff(1)`。
+
+**2.4. 时间戳**
+
+-   `mtime`（modify time）
+
+    -   文件内容最后一次被修改的时间。
+    -   执行 `ls -l` 查看。
+
+-   `ctime`（change time）
+
+    -   文件元数据最后一次被修改的时间。
+    -   执行 `ls -lc` 查看。
+
+-   `atime`（access time）
+
+    -   文件最后一次被访问的时间。
+    -   执行 `ls -lu` 查看。
+
+!!! info "更多信息"
+
+    自 Linux 2.6.30 后，`atime` 属性更新的默认行为是 `relatime`，而 `strictatime` 才严格遵守 POSIX 标准。原因是该属性除了 `mbox(5)` 文件外很少用到。参阅 `mount(8)` 了解更多。
+
+**2.5. 一切皆文件**
+
+-   硬链接：`ln target link_name`
+-   软链接（symlink）：`ln -s target link_name`
+
+!!! tip "提示"
+
+    通过执行 `ls -li` 来查看 inode 号。
+
+-   管道（FIFO）
+
+    -   `mkfifo mypipe`
+    -   `echo "hello" > mypipe &`
+    -   `cat mypipe`
+
+-   套接字（Socket）：`netstat -an`
+-   设备文件
+
+    -   控制台 `/dev/console`，打印机 `/dev/lp0`，串口控制台 `/dev/ttyS0`。
+
+        !!! warning "注意"
+
+            常规访问打印机请用 `lp(1)`。
+
+    -   执行 `ls -l /dev/sda /dev/sr0 /dev/ttyS0 /dev/zero` 查看主、次设备号，与可以读写他们的群组。
+    -   现代 Linux 系统中，处在 `/dev` 之下的文件系统会自动被 `udev(7)` 机制填充。
+
+-   procfs
+
+    -   加载于 `/proc`，`ps(1)` 工具从这个目录结构获得信息。
+    -   `/proc/sys`，使用专门的 `sysctl(8)` 修改，或使用 `/etc/sysctl.conf`。
+    -   `/proc/kcore` 指向系统内存
+
+-   sysfs
+
+    -   加载于 `/sys`
+
+-   tmpfs
+
+    -   系统启动早期阶段，`/run` 目录挂载为 tmpfs
+    -   `/var/run -> /run`
+    -   `/var/lock -> /run/lock` 
+    -   `/dev/shm -> /run/shm`
+
+!!! info "更多信息"
+
+    以上三个文件系统，可以参考 Linux 内核文档 `/usr/share/doc/linux-doc/Documentation/filesystems/*` 下的 `proc.rst.gz`，`sysf.rst.gz`，`tmpfs.rst.gz`。由软件包
+    `linux-doc` 提供。
+
+---
+
+3. 一些技巧
+-----------
+
+在原文档中，这里的内容是教你如何使用 `mci(1)` 工具。但由于其本身并不难，我转而在这里记录一点，能让我在 Mac 上，将终端用得更舒服的 iTerm2 的技巧与设置。
+
+-   在 iTerm2 设置 `Profiles` - `Keys` 中，将 `Left option (⌥)  key:` 设置为 `Esc+`，效果为：
+
+    -   ++left-option++ 等价于 ++meta++
+    -   大多数情况下也等价于 ++alt++
+
+-   在 iTerm2 设置 `Keys` - `Key Bindings` 中，添加 `Keyboard Shortcut:` ++function+enter++ 映射到 `Action: Send Escape Sequence`，内容为 `[2~`，效果为：
+
+    -   ++function+enter++ 等价于 ++insert++
+
+-   Mac 自带的其他常用键位：
+
+    -   ++function+arrow-up++ 等价于 ++page-up++
+    -   ++function+arrow-down++ 等价于 ++page-down++
+    -   ++function+arrow-left++ 等价于 ++home++
+    -   ++function+arrow-right++ 等价于 ++end++
+    -   ++function+backspace++ 等价于 ++del++
+
+---
+
+4. 类 Unix 工作环境基础
+-----------------------
+
+-   `bash(1)`
+
+    -   绑定的按键有 ++control+u++ / ++h++ / ++d++ / ++c++ / ++z++ / ++s++ / ++q++ 
+         
+        !!! tip "提示"
+
+            Ctrl-S 的终端功能可能被 `stty(1)` 禁用。
+
+    -   ++arrow-up++ 、++control+r++ 与命令历史有关
+    -   ++tab++ 用于补全，如果要输入制表符，则需要 ++control+v+tab++ 
+    -   ++control+alt+del++ 重启/关闭系统，参见 `inittab(5)`
+
+-   鼠标
+
+    -   在 CLI 界面如果需要鼠标支持，需要让 `gpm(8)` 作为 daemon 运行。
+
+-   `less(1)`
+
+    -   在脚本开头执行 `eval $(lesspipe)`，`eval $(lessfile)` 让其变得更加强大
+    -   参考 `/usr/share/doc/less/LESSOPEN`
+
+-   `vim`
+
+    -   Debian 通过命令 `/usr/bin/editor` 提供了对系统默认编辑器的统一访问，因此其他程序，例如 `reportbug(1)`，可以调用它
+    -   `sudo update-alternatives --config editor` 
+
+-   记录 shell 活动
+
+    -   新版本的 Vim (version>=8.2)能够被用来清晰的记录 shell 活动，使用 **TERMINAL-JOB** 模式。
+    -   在 `script(1)` 下运行 shell，按下 ++control+d++ 退出。
+
+-   基本 Unix 命令
