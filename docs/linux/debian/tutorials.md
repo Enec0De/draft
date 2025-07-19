@@ -284,10 +284,11 @@ GNU/Linux 教程
 -   `bash(1)`
 
     -   绑定的按键有 ++control+u++ / ++h++ / ++d++ / ++c++ / ++z++ / ++s++ / ++q++ 
-         
+    -   个人额外常用 ++control+a++ / ++k++ / ++e++
+
         !!! tip "提示"
 
-            Ctrl-S 的终端功能可能被 `stty(1)` 禁用。
+            ++control+s++ 的终端功能可能被 `stty(1)` 禁用。
 
     -   ++arrow-up++ 、++control+r++ 与命令历史有关
     -   ++tab++ 用于补全，如果要输入制表符，则需要 ++control+v+tab++ 
@@ -306,10 +307,33 @@ GNU/Linux 教程
 
     -   Debian 通过命令 `/usr/bin/editor` 提供了对系统默认编辑器的统一访问，因此其他程序，例如 `reportbug(1)`，可以调用它
     -   `sudo update-alternatives --config editor` 
+    -   `:term` 后 ++control+w++
+    -   `:help netrw`
 
 -   记录 shell 活动
 
     -   新版本的 Vim (version>=8.2)能够被用来清晰的记录 shell 活动，使用 **TERMINAL-JOB** 模式。
+    -   `:hardcopy > /path/to/logfile`
     -   在 `script(1)` 下运行 shell，按下 ++control+d++ 退出。
 
 -   基本 Unix 命令
+
+    -   `pwd`、`whoami`、`id`、`file`
+    -   `type -p commandname`、`which commandname`、`info commandname`
+    -   `apropos key-word` `man -k key-word`    
+    -   `< input.txt > output.txt commandname`
+    -   `tree`、`lsof filename`、`lsof -p pid`
+    -   `find`、`locate`
+    -   `top`、`ps aux`、`ps axf`、`ps -ef`
+    -   `ps aux | grep -e "pattern"`
+    -   `gzip`、`gunzip`、`bzip2`、`bunzip2`、`xz`、`unxz`
+    -   `tar -xvf`、`tar -xvzf`、`tar -xvjf`、`tar -xvJf`
+    -   `tar -cvf`、`tar -cvzf`、`tar -cvjf`、`tar -cvJf`
+    -   `zcat README.gz | pager`
+
+---
+
+5. 简单 shell 命令
+------------------
+
+
