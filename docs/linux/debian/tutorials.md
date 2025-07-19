@@ -336,4 +336,131 @@ GNU/Linux 教程
 5. 简单 shell 命令
 ------------------
 
+**5.1. 环境变量**
 
+环境变量的默认值由 PAM 系统初始化，其中一些会被某些应用程序重新设定。
+
+-   PAM（可插拔身份验证模块）系统的模块，如 `pam_env` 模块，通过设定 `/etc/pam.conf`、`/etc/environment` 和 `/etc/default/locale` 设置环境变量。
+-   显示管理器（例如 `gdm3`）通过 `~/.profile` 给 GUI 会话重新设定环境变量。
+-   用户特有程序初始化时，可以重新设置 `~/.profile`、`~/.bash_profile` 和 `~/.bashrc` 中设置的环境变量。
+-   `$LANG` 变量
+
+    -   建议最好用 `$LANG` 来配置系统环境变量，只有在逼不得已的情况下才用 `$LC_*` 环境变量。
+    -   组成：`xx_YY.ZZZZ`，如 `zh_CN.UTF-8`
+
+-   `$PATH` 变量
+
+    -   Shell 的搜索路径
+    -   普通用户账户可能不包括 `/sbin` 和 `/usr/sbin` 
+
+-   `$HOME` 变量
+
+    -   Shell 扩展 `~normal_user` 为 `/home/normal_user/`
+    -   `sudo -H program` 将 `$HOME` 重置为目标用户的标准主目录（这里是 `/root`)
+
+**5.2. 通配符**
+
+-   `echo ?[a-z][^0-9]*.txt`
+-   `finde . -name '*'` 会匹配 . 开头的隐藏文件名，这一点和 shell glob 模式不同。
+-   BASH 内置的 `shopt` 选项定义全局行为。
+
+参见 `glob(7)`。
+
+**5.3. 返回值和重定向**
+
+-   尝试执行 `echo $?` 获取返回值。
+-   shell 命令常见用法：
+
+    -   `command &`
+    -   `command1 | command2`、
+    -   `command1 ; command2`、`command1 && command2`、`command1 || command2`
+    -   `command > foo`、`command >> foo`
+    -   `command << delimiter`、`command <<- delimiter`
+
+-   文件描述符相关：
+
+    -   `command1 2>&1 | command2`
+    -   `command 2> stderr.txt`、`command 2>> stderr.txt`
+    -   使用 `exec` 通过任意一个文件描述符打开文件
+    
+        ``` bash
+        echo Hello > foo
+        exec 3<foo 4>bar  # 分配文件描述符 3 用于读取 foo，分配文件描述符 4 用于写入 bar
+        cat <&3 >&4       # 将文件描述符 3 复制到 stdin，将文件描述符 4 复制到 stdout
+        exec 3<&- 4>&-    # 关闭输入、输出文件描述符 3 和 4
+        cat bar           # 读出 Hello
+        ```
+
+!!! tip "提示"
+
+    `2>&1` 将 stderr 重定向到 stdout 的 **目标**，`>/dev/null` 将 stdout 重定向丢弃，因此 `command 2>&1 >/dev/null` 的作用是只显示 stderr。
+
+    若只想传递 stderr，需要用到进程替换，执行命令 `command1 2> >(command2)`。
+
+后台进程的管理涉及 shell 的内建命令：`jobs`、`fg`、`bg` 和 `kill`。请阅读 `bash(1)` 中的章节：“SIGNALS”、“JOB CONTROL” 和 `builtins(1)`。
+
+---
+
+6. 类 Unix 的文本处理
+---------------------
+
+**6.1. 常用的文本处理工具**
+
+-   未使用正则表达式的文本处理工具：
+
+    -   `cat(1)`、`tac(1)`、`cut(1)`、`heda(1)`、`tail(1)`、`sort(1)`、`uniq(1)`、`tr(1)`、`diff(1)`
+
+-   默认使用基础正则表达式（BRE）：
+
+    -   `ed(1)` - `vi(1)` - `vim(1)`
+    -   `sed(1)`、`grep(1)`
+
+-   使用扩展的正则表达式（ERE）：
+
+    -   `awk(1)``egrep(1)`
+    -   带有 `re` 模块的 `python(1)`，参见 `/usr/share/doc/python*`
+    -   `tcl(3tcl)` 参见 `re_syntax(3)`，经常与 `tk(3tk)` 一起使用
+    -   `perl(1)` 参见 `perlre(1)`
+    -   `pcregrep` 软件包的 `pcregrep(1)` 可以匹配满足 **Perl 兼容正则表达式（PCRE）**模式的文本
+
+**6.2. 正则表达式**
+
+正则表达式有三种不同的版本，分为 basic（BRE）、extended（ERE）、perl（PCRE）三种，参考文档。
+
+-   替换表达式：
+
+    -   `&` 表示全文，`\n` 表示第 n 个捕获组。
+
+-   全局替换：
+
+    -   `sed -i -e 's/FROM_REGEX/TO_TEXT/g' file`
+    -   `vim '+%s/FROM_REGEX/TO_TEXT/gc' '+update' '+q' file`
+    -   `vim '+argdo %s/FROM_REGEX/TO_TEXT/gce|update' '+q' file1 file2 file3`
+    -   `perl -i -p -e 's/FROM_REGEX/TO_TEXT/g;' file1 file2 file3`
+
+!!! note "注意"
+
+    `sed(1)` 和 `vim(1)` 使用 BRE；`perl(1)` 使用 ERE。
+
+**6.3. 提取数据**
+
+-   使用 `awk(1)` 工具从文件提取数据：
+
+    -   `awk '($1=="text") { print }' < file.txt`
+
+-   Shell 内建命令 `read` 使用 `$IFS`（内部域分隔符）中的字符来将行分隔成多个单词。
+
+**6.4. 用于管道命令的脚本片段**
+
+-   `find /usr -print`
+-   `seq 1 100`
+-   `... | xargs -n 1 command`
+-   `... | grep -v -e regex_pattern`
+-   `... | cut -d: -f3 -`
+-   `... | col -bx`
+-   `... | expand -`
+-   `... | sort | uniq`
+-   `... | tr 'A-Z' 'a-z'`
+-   `... | tr -d '\n'`
+
+使用 `find(1)` 和 `xargs(1)`，单行 shell 脚本能够在多个文件上循环使用，可以执行相当复杂的任务。
