@@ -1,19 +1,41 @@
 ---
-title: 常用
+title: 常用工具
 ---
 
-常用
-====
+常用工具
+========
 
 列出一些常用的工具，包含一些常用的实践。
 
 ---
 
+`kill`：
+
+-   常用信号： 
+    ``` bash
+    kill -15   # 优雅终止 terminal  
+    kill -9    # 直接杀死 kill
+    kill -2    # 中断 interrupt 等价于 ^C
+    kill -1    
+    ```
+
+-   kill -1
+
+    -   `kill -1` 是发送 SIGHUP 使其重载，例如 `systemctl reload`（但不等价）
+    -   `nohup` 是忽略 SIGHUP
+    -   `disown` 是从 Shell 作业列表移除，避免 SIGHUP
+
+-   参阅 `signal(7)`
+
+---
+
 `wget`: 
 
-```
+``` bash
 wget -r -np -nH --cut-dirs=2 -R "index.html*" "https://example.com/dir1/dir2/files/"
 ```
+
+---
 
 `bash`:
 
@@ -36,6 +58,8 @@ wget -r -np -nH --cut-dirs=2 -R "index.html*" "https://example.com/dir1/dir2/fil
 
     登陆 shell 下不会加载：`/etc/bash.bashrc` 和 `~/.bashrc` 文件。
 
+---
+
 `zsh`:
 
 -   实例加载（环境变量）：`/etc/zshenv` -> `~/.zshenv`
@@ -47,6 +71,8 @@ wget -r -np -nH --cut-dirs=2 -R "index.html*" "https://example.com/dir1/dir2/fil
 !!! tip "提示"
 
     按顺序加载，若前一个不加载，后续文件将不会加载。
+
+---
 
 `sed`:
 
@@ -67,6 +93,8 @@ wget -r -np -nH --cut-dirs=2 -R "index.html*" "https://example.com/dir1/dir2/fil
     -   `sed -n '/start/,/end/p' file.txt` 打印区间内的所有行
     -   `sed '/start/,/end/d' file.txt` 删除区间内的所有行
 
+---
+
 `awk`:
 
 -   基础结构：`awk 'pattern { action }' file.txt`
@@ -81,34 +109,3 @@ wget -r -np -nH --cut-dirs=2 -R "index.html*" "https://example.com/dir1/dir2/fil
     -   `NR`：当前行号
     -   `FS`：输入字段分隔符
     -   `OFS`：输出字段分隔符
-
-### 正则表达式
-
-正则表达式：
-
-| BRE                                | ERE                         | Description                      |
-| :--------------------------------: | :-------------------------: | :------------------------------: |
-| `\` `.` `[` `]` `^` `$` `*`        |                             | 通用元字符                       |
-| `\+` `\?` `\(` `\)` `\{` `\}` `\|` |                             | BRE 独有元字符                   |
-|                                    | `+` `?` `(` `)` `{` `}` `|` | ERE 独有元字符                   |
-| `c`                                |                             | 匹配 `c`（`c` 不为上述元字符）   |
-| `\c`                               |                             | 匹配 `c` (`c` 为任意字符)        |
-| `.`                                |                             | 匹配任意字符，包括换行符         |
-| `^`                                |                             | 字符串的开头                     |
-| `$`                                |                             | 字符串的结尾                     |
-| `\<`                               |                             | 单词的开始                       |
-| `\>`                               |                             | 单词的结尾                       |
-| `[abc]`                            |                             | 匹配 abc 中任意一个              |
-| `[^abc]`                           |                             | 匹配 abc 中没有的                |
-| `r*`                               |                             | 匹配 0 个或多个 r                |
-| `r\+`                              | `r+`                        | 匹配 1 个或多个 r                |
-| `r\?`                              | `r?`                        | 匹配 0 个或 1 个 r               |
-| `r1\|r2`                           | `r1|r2`                     | 匹配一个 r1 或 r2                |
-| `\(r1\|r2\)`                       | `(r1|r2)`                   | 同上，并明确限定范围，成为捕获组 |
-
-替换表达式：
-
--   `&` 表示正则表达式所匹配的内容
--   `\n` 表示前面第 n 个括号（捕获组）内正则表达式匹配的内容
--   对于 Perl，使用 `perl -pe '...'` 替换字符串来说，应该使用 `$&` 和 `$n`
--   `(?:...)` 仅分组不捕获

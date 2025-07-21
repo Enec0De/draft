@@ -114,3 +114,153 @@ Debian 软件包管理
     我觉得**我自己**需要注意的两个命令：`aptitude search '~c'`、`dpkg -l | grep '^rc'`。
 
 ---
+
+3. 全面的系统升级
+-----------------
+
+你应该做的：
+
+-   查看“发行说明”
+-   备份整个系统（尤其是数据和配置信息）
+-   用 `script(1)` 记录升级过程
+-   用 `aptitude unmarkauto pkg_name` 来防止移除软件包
+-   移除 `/etc/apt/preferences` 文件（禁用 `apt-pinning`）
+-   运行 `apt-get -s dist-upgrade` 评估升级造成的影响
+-   最后运行 `apt-get dist-upgrade`
+
+---
+
+4. 高级软件包管理操作
+---------------------
+
+-   `dpkg -l pkg_name_pattern` 列出已安装软件包的列表
+-   `dpkg -L pkg_name` 根据软件包检索它安装的所有文件
+ 
+    -   `apt-file list pkg_name_pattern`，从**档案库**检索包的文件
+
+-   `dpkg -S file_name_pattern` 根据文件检索它属于的已安装的软件包
+
+    -   `apt-file search file_name_pattern`，从**档案库**检索提供该文件的软件源
+
+-   `dpkg-reconfigure pkg_name` 重置软件包的配置文件
+
+    -   `-plow` 以最详细的方式执行
+    -   `configure-debian(8)` 工具以全屏菜单的形式重新配置
+
+-   `dpkg --audit` 软件包的审计系统，用于检测异常的包
+-   `dpkg --configure -a` 配置所有**部分安装**的软件包
+
+-   `apt-cache(8)`
+
+    -   `apt-cache policy binary_pkg_name` 从本地缓存显示一个二进制软件包的可用版本、优先级和档案库信息
+    -   `apt-cache madison pkg_name` 从本地缓存显示一个软件包的可用版本和档案库信息
+    -   `apt-cache showsrc binary_pkg_name` 从本地缓存显示一个二进制软件包的源代码软件包信息
+
+-   `apt-get build-dep pkg_name` 或者 `aptitude build-dep pkg-name`
+
+    -   安装构建软件包所需要的软件包
+
+-   `apt-get source pkg_name` 
+
+    -   从标准档案库下载源代码
+
+-   `dget [*dsc_URL]` 
+
+    -   从其他档案库下载源代码
+
+-   `dpkg-source -x pkg_version-revision.dsc`
+
+    -   从源代码软件包集合（`*.orig.tar.gz` 和 `*.debian.tar.gz` / `*.diff.gz`）中构建代码树
+
+-   `debuild binary`
+-   `dpkg -i pkg_name_version-debian.revision_arch.deb`
+-   `apt install /path/to/pkg_filename.deb`
+-   `debi pkg_name_version-debian.revision_arch.dsc`
+-   `dpkg --get-selections '*' >selection.txt`
+-   `dpkg --set-selections <selection.txt`
+-   `echo pkg_name hold | dpkg --set-selections`
+
+    -   相当于 `aptitude hold pkg_name`
+
+!!! warning "警告"
+
+    对于支持多架构的软件包，应该指定架构名称，如：
+
+    ``` bash
+    dpkg -L libglib2.0-0:amd64
+    ```
+
+    小心使用 `dpkg -i` 和 `debi`，以及 `dpkg --force-all` 只适用于高手。
+
+-   `aptitude(8)` 以外的其他软件包管理命令使用类似于 shell glob 的通配符。
+-   `configure-debian(8)` ->  `dpkg-reconfigure(8)` -> `debconf`。
+-   `dget(1)`、`debuild(1)` 和 `debi(1)` 需要 `devscripts` 软件包。
+-   使用 `debsums(1)` 通过 `/var/lib/dpkg/info/*.md5sums` 验证已安装的文件。
+-   安装软件包 `apt-list bugs` 可以自动检查 Debian BTS 里的严重 bug。
+-   安装软件包 `apt-listchanges`，升级时会在 `NEWS.Debian` 中提供重要新闻。
+-   一些搜索软件包元数据的工具：
+
+    -   `grep-dctrl(1)`、`grep-status(1)`、`grep-available(1)` 和 `apt-rdepends(8)`。
+
+---
+
+5. Debian 软件包内部管理
+------------------------
+
+**5.1. 软件包的档案与元数据**
+
+-   secure ATP 通过用本地安装的 Debian 档案库公钥，来解密 Release.gpg，从而验证**顶层** Release 的完整性。
+
+    -   Packages 和 Sources 文件的完整性则由**顶层** Release 文件内的 MD5sum 值验证。
+
+-   元数据的本地拷贝：
+
+    -   `/var/lib/apt/list/*`
+    -   `/var/cache/apt/apt-file/*`
+
+-   软件包状态：
+
+    -   APT 的软件包状态在 `/var/lib/apt/extended_states` 文件中
+    -   `aptitude` 的软件包状态在 `/var/lib/aptitude/pkgstates` 文件中
+
+-   软件包的本地副本：`/var/cache/apt/archives/*`
+-   Debian 软件包的名称格式，参阅 `dpkg-source(1)`
+
+!!! caution "注意"
+
+    可以用 `dpkg(1)` 提供的命令检查软件包版本，例如 `dpkg --compare-versions 7.0 gt 7.~pre1 ; echo $?`。
+
+**5.2. `dpkg` 命令**
+
+-   `dpkg` 创建的重要文件：
+
+    -   `/var/lib/dpkg/info/package_name.conffiles`
+    -   `/var/lib/dpkg/info/package_name.list`
+    -   `/var/lib/dpkg/info/package_name.md5sums`
+    -   `/var/lib/dpkg/info/package_name.preinst`
+    -   `/var/lib/dpkg/info/package_name.postinst`
+    -   `/var/lib/dpkg/info/package_name.prerm`
+    -   `/var/lib/dpkg/info/package_name.postrm`
+    -   `/var/lib/dpkg/info/package_name.config`
+    -   `/var/lib/dpkg/alternatives/package_name`
+    -   `/var/lib/dpkg/available`
+    -   `/var/lib/dpkg/diversions`
+    -   `/var/lib/dpkg/statoverride`
+    -   `/var/lib/dpkg/status`
+    -   `/var/lib/dpkg/status-old`
+    -   `/var/backups/dpkg.status*`
+
+!!! tip "提示"
+
+    `udpkg` 命令用于打开 `udeb` 软件包，`udpkg` 命令是 `dpkg` 命令的一个精简版本。
+
+**5.3. 其他工具**
+
+-   `update-alternatives(1)` 命令
+-   `dpkg-statoverride(1)` 命令
+-   `dpkg-divert(1)` 命令
+
+---
+
+6. 从损坏的系统中恢复
+---------------------

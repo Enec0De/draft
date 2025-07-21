@@ -159,6 +159,9 @@ nav:
     - linux/index.md
     - 基础工具:
       - 常用: linux/essential-tools/tools.md
+      - 正则表达式: linux/essential-tools/regex.md
+      - Vim 工具: linux/essential-tools/vim.md
+      - 包管理工具: linux/essential-tools/package-management.md
     - Debian 参考手册:
       - GNU/Linux 教程: linux/debian/tutorials.md
       - Debian 软件包管理: linux/debian/dpkg-management.md

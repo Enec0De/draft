@@ -371,6 +371,7 @@ GNU/Linux 教程
 -   尝试执行 `echo $?` 获取返回值。
 -   shell 命令常见用法：
 
+    -   `$()`、`<()`
     -   `command &`
     -   `command1 | command2`、
     -   `command1 ; command2`、`command1 && command2`、`command1 || command2`
@@ -390,6 +391,10 @@ GNU/Linux 教程
         exec 3<&- 4>&-    # 关闭输入、输出文件描述符 3 和 4
         cat bar           # 读出 Hello
         ```
+
+        !!! note "注意"
+
+            注意 `n<`，`n>` 和 `&n`
 
 !!! tip "提示"
 
