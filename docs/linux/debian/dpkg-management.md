@@ -400,7 +400,7 @@ Debian 软件包管理
 
     -   1. 在 `/etc/apt/sources.list` 中加入以下条目：
 
-        ```
+        ``` bash
         deb-src http://deb.debian.org/debian unstable  main contrib non-free
         ```
 
@@ -441,5 +441,17 @@ Debian 软件包管理
 
         来自 `aptitude-doc-en` 软件包的 `/usr/share/doc/aptitude/html/en/index.html`
 
-    -   Debian 档案库的官方详细文档
-    -   为 Debian 用户构建一个 Debian 软件包的教程：Debian 维护者指南
+    -   Debian 档案库的官方详细文档：
+
+        [Debian Policy Manual Chapter 2 - The Debian Archive][debpolicy]
+
+        [Debian Developer's Reference, Chapter 4 - Resources for Debian Developers 4.6 The Debian archive][debdev]
+
+        [The Debian GNU/Linux FAQ, Chapter 6 - The Debian FTP archives][debfaq]
+
+    -   为 Debian 用户构建一个 Debian 软件包的教程：[Debian 维护者指南][debmake]
+
+  [debpolicy]: https://www.debian.org/doc/debian-policy/ch-archive
+  [debdev]: https://www.debian.org/doc/manuals/developers-reference/resources.html#archive
+  [debfaq]: https://www.debian.org/doc/manuals/debian-faq/ftparchives
+  [debmake]: https://www.debian.org/doc/manuals/debmake-doc/
