@@ -28,7 +28,11 @@ title: Linux Home
     -   [GNU/Linux 教程][tutorials]
     -   [Debian 软件包管理][dpkg]
     -   [系统初始化][sysinit]
+    -   [认证和访问控制][auth]
+    -   [网络设置][net]
 
 [tutorials]: debian/tutorials.md
 [dpkg]: debian/dpkg-management.md
 [sysinit]: debian/system-initialization.md
+[auth]: debian/auth-and-ac.md
+[net]: debian/network-setup.md

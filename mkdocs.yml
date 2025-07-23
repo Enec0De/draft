@@ -166,6 +166,8 @@ nav:
       - GNU/Linux 教程: linux/debian/tutorials.md
       - Debian 软件包管理: linux/debian/dpkg-management.md
       - 系统初始化: linux/debian/system-initialization.md
+      - 认证和访问控制: linux/debian/auth-and-ac.md
+      - 网络设置: linux/debian/network-setup.md
   - 网课:
     - courses/index.md
     - TCCA: 
