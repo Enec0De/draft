@@ -77,12 +77,12 @@ extra:
       link: https://x.com/home
 
 extra_javascript:
-  - javascripts/katex.js
+  - assets/javascripts/katex.js
   - https://unpkg.com/katex@0/dist/katex.min.js
   - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
 
 extra_css:
-  - stylesheets/extra.css
+  - assets/stylesheets/extra.css
   - https://unpkg.com/katex@0/dist/katex.min.css
 
 #Extensions
@@ -158,7 +158,7 @@ nav:
   - Linux: 
     - linux/index.md
     - 基础工具:
-      - 常用: linux/essential-tools/tools.md
+      - 常用: linux/essential-tools/essential-commands.md
       - 正则表达式: linux/essential-tools/regex.md
       - Vim 工具: linux/essential-tools/vim.md
       - 包管理工具: linux/essential-tools/package-management.md
