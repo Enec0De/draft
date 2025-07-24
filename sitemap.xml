@@ -2,142 +2,146 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://enec0de.github.io/draft/</loc>
-         <lastmod>2025-07-23</lastmod>
+         <lastmod>2025-07-24</lastmod>
     </url>
     <url>
          <loc>https://enec0de.github.io/draft/courses/</loc>
-         <lastmod>2025-07-23</lastmod>
+         <lastmod>2025-07-24</lastmod>
     </url>
     <url>
          <loc>https://enec0de.github.io/draft/courses/operating-systems/introduction/</loc>
-         <lastmod>2025-07-23</lastmod>
+         <lastmod>2025-07-24</lastmod>
     </url>
     <url>
          <loc>https://enec0de.github.io/draft/courses/operating-systems/virtualization/</loc>
-         <lastmod>2025-07-23</lastmod>
+         <lastmod>2025-07-24</lastmod>
     </url>
     <url>
-         <loc>https://enec0de.github.io/draft/courses/tcca/01-Cloud-Overview/</loc>
-         <lastmod>2025-07-23</lastmod>
+         <loc>https://enec0de.github.io/draft/courses/tcca/01-cloud-overview/</loc>
+         <lastmod>2025-07-24</lastmod>
     </url>
     <url>
-         <loc>https://enec0de.github.io/draft/courses/tcca/02-CVM-Service/</loc>
-         <lastmod>2025-07-23</lastmod>
+         <loc>https://enec0de.github.io/draft/courses/tcca/02-cvm-service/</loc>
+         <lastmod>2025-07-24</lastmod>
     </url>
     <url>
-         <loc>https://enec0de.github.io/draft/courses/tcca/03-Compute-Container-Tech/</loc>
-         <lastmod>2025-07-23</lastmod>
+         <loc>https://enec0de.github.io/draft/courses/tcca/03-compute-container-tech/</loc>
+         <lastmod>2025-07-24</lastmod>
     </url>
     <url>
-         <loc>https://enec0de.github.io/draft/courses/tcca/04-Network-Service/</loc>
-         <lastmod>2025-07-23</lastmod>
+         <loc>https://enec0de.github.io/draft/courses/tcca/04-network-service/</loc>
+         <lastmod>2025-07-24</lastmod>
     </url>
     <url>
-         <loc>https://enec0de.github.io/draft/courses/tcca/05-Storage-Service/</loc>
-         <lastmod>2025-07-23</lastmod>
+         <loc>https://enec0de.github.io/draft/courses/tcca/05-storage-service/</loc>
+         <lastmod>2025-07-24</lastmod>
     </url>
     <url>
-         <loc>https://enec0de.github.io/draft/courses/tcca/06-Database-Service/</loc>
-         <lastmod>2025-07-23</lastmod>
+         <loc>https://enec0de.github.io/draft/courses/tcca/06-database-service/</loc>
+         <lastmod>2025-07-24</lastmod>
     </url>
     <url>
-         <loc>https://enec0de.github.io/draft/courses/tcca/07-Security-Service/</loc>
-         <lastmod>2025-07-23</lastmod>
+         <loc>https://enec0de.github.io/draft/courses/tcca/07-security-service/</loc>
+         <lastmod>2025-07-24</lastmod>
     </url>
     <url>
          <loc>https://enec0de.github.io/draft/fundamentals/</loc>
-         <lastmod>2025-07-23</lastmod>
+         <lastmod>2025-07-24</lastmod>
     </url>
     <url>
          <loc>https://enec0de.github.io/draft/fundamentals/code-blocks/</loc>
-         <lastmod>2025-07-23</lastmod>
+         <lastmod>2025-07-24</lastmod>
     </url>
     <url>
          <loc>https://enec0de.github.io/draft/fundamentals/document-structure/</loc>
-         <lastmod>2025-07-23</lastmod>
+         <lastmod>2025-07-24</lastmod>
     </url>
     <url>
          <loc>https://enec0de.github.io/draft/fundamentals/grid-layouts/</loc>
-         <lastmod>2025-07-23</lastmod>
+         <lastmod>2025-07-24</lastmod>
     </url>
     <url>
          <loc>https://enec0de.github.io/draft/fundamentals/links-and-references/</loc>
-         <lastmod>2025-07-23</lastmod>
+         <lastmod>2025-07-24</lastmod>
     </url>
     <url>
          <loc>https://enec0de.github.io/draft/fundamentals/lists/</loc>
-         <lastmod>2025-07-23</lastmod>
+         <lastmod>2025-07-24</lastmod>
     </url>
     <url>
          <loc>https://enec0de.github.io/draft/fundamentals/other-elements/</loc>
-         <lastmod>2025-07-23</lastmod>
+         <lastmod>2025-07-24</lastmod>
     </url>
     <url>
          <loc>https://enec0de.github.io/draft/fundamentals/tables/</loc>
-         <lastmod>2025-07-23</lastmod>
+         <lastmod>2025-07-24</lastmod>
     </url>
     <url>
          <loc>https://enec0de.github.io/draft/linux/</loc>
-         <lastmod>2025-07-23</lastmod>
+         <lastmod>2025-07-24</lastmod>
     </url>
     <url>
          <loc>https://enec0de.github.io/draft/linux/debian/auth-and-ac/</loc>
-         <lastmod>2025-07-23</lastmod>
+         <lastmod>2025-07-24</lastmod>
     </url>
     <url>
-         <loc>https://enec0de.github.io/draft/linux/debian/dpkg-management/</loc>
-         <lastmod>2025-07-23</lastmod>
+         <loc>https://enec0de.github.io/draft/linux/debian/network-apps/</loc>
+         <lastmod>2025-07-24</lastmod>
     </url>
     <url>
          <loc>https://enec0de.github.io/draft/linux/debian/network-setup/</loc>
-         <lastmod>2025-07-23</lastmod>
+         <lastmod>2025-07-24</lastmod>
+    </url>
+    <url>
+         <loc>https://enec0de.github.io/draft/linux/debian/package-management/</loc>
+         <lastmod>2025-07-24</lastmod>
     </url>
     <url>
          <loc>https://enec0de.github.io/draft/linux/debian/system-initialization/</loc>
-         <lastmod>2025-07-23</lastmod>
+         <lastmod>2025-07-24</lastmod>
     </url>
     <url>
          <loc>https://enec0de.github.io/draft/linux/debian/tutorials/</loc>
-         <lastmod>2025-07-23</lastmod>
+         <lastmod>2025-07-24</lastmod>
     </url>
     <url>
-         <loc>https://enec0de.github.io/draft/linux/essential-tools/package-management/</loc>
-         <lastmod>2025-07-23</lastmod>
+         <loc>https://enec0de.github.io/draft/linux/tools/essential-commands/</loc>
+         <lastmod>2025-07-24</lastmod>
     </url>
     <url>
-         <loc>https://enec0de.github.io/draft/linux/essential-tools/regex/</loc>
-         <lastmod>2025-07-23</lastmod>
+         <loc>https://enec0de.github.io/draft/linux/tools/package-management/</loc>
+         <lastmod>2025-07-24</lastmod>
     </url>
     <url>
-         <loc>https://enec0de.github.io/draft/linux/essential-tools/tools/</loc>
-         <lastmod>2025-07-23</lastmod>
+         <loc>https://enec0de.github.io/draft/linux/tools/regex/</loc>
+         <lastmod>2025-07-24</lastmod>
     </url>
     <url>
-         <loc>https://enec0de.github.io/draft/linux/essential-tools/vim/</loc>
-         <lastmod>2025-07-23</lastmod>
+         <loc>https://enec0de.github.io/draft/linux/tools/vim/</loc>
+         <lastmod>2025-07-24</lastmod>
     </url>
     <url>
          <loc>https://enec0de.github.io/draft/programming/</loc>
-         <lastmod>2025-07-23</lastmod>
+         <lastmod>2025-07-24</lastmod>
     </url>
     <url>
          <loc>https://enec0de.github.io/draft/programming/python/basics/</loc>
-         <lastmod>2025-07-23</lastmod>
+         <lastmod>2025-07-24</lastmod>
     </url>
     <url>
          <loc>https://enec0de.github.io/draft/programming/python/object-oriented/</loc>
-         <lastmod>2025-07-23</lastmod>
+         <lastmod>2025-07-24</lastmod>
     </url>
     <url>
          <loc>https://enec0de.github.io/draft/programming/python/system-interaction/</loc>
-         <lastmod>2025-07-23</lastmod>
+         <lastmod>2025-07-24</lastmod>
     </url>
     <url>
          <loc>https://enec0de.github.io/draft/programming/shell-scripting/advanced-techniques/</loc>
-         <lastmod>2025-07-23</lastmod>
+         <lastmod>2025-07-24</lastmod>
     </url>
     <url>
          <loc>https://enec0de.github.io/draft/programming/shell-scripting/basics/</loc>
-         <lastmod>2025-07-23</lastmod>
+         <lastmod>2025-07-24</lastmod>
     </url>
 </urlset>
