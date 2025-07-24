@@ -30,9 +30,11 @@ title: Linux Home
     -   [系统初始化][sysinit]
     -   [认证和访问控制][auth]
     -   [网络设置][net]
+    -   [网络应用][apps]
 
 [tutorials]: ./debian/tutorials.md
 [dpkg]: ./debian/package-management.md
 [sysinit]: ./debian/system-initialization.md
 [auth]: ./debian/auth-and-ac.md
 [net]: ./debian/network-setup.md
+[apps]: ./debian/network-apps.md
