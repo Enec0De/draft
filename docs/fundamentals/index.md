@@ -21,9 +21,9 @@ title: 文档规范
     -   [引用链接][links-and-references]
     -   [列表元素][lists]
     
-      [document-structure]: document-structure.md
-      [links-and-references]: links-and-references.md
-      [lists]: lists.md
+  [document-structure]: ./document-structure.md
+  [links-and-references]: ./links-and-references.md
+  [lists]: ./lists.md
     
 -   :fontawesome-solid-hashtag: **扩展元素**
 
@@ -34,9 +34,9 @@ title: 文档规范
     -   [表格元素][tables]
     -   [其他元素][other-elements]
     
-      [code-blocks]: code-blocks.md
-      [grid-layouts]: grid-layouts.md
-      [tables]: tables.md
-      [other-elements]: other-elements.md
+  [code-blocks]: ./code-blocks.md
+  [grid-layouts]: ./grid-layouts.md
+  [tables]: ./tables.md
+  [other-elements]: ./other-elements.md
 
 </div>

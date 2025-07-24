@@ -158,26 +158,26 @@ nav:
   - Linux: 
     - linux/index.md
     - 基础工具:
-      - 常用: linux/essential-tools/essential-commands.md
-      - 正则表达式: linux/essential-tools/regex.md
-      - Vim 工具: linux/essential-tools/vim.md
-      - 包管理工具: linux/essential-tools/package-management.md
+      - 常用: linux/tools/essential-commands.md
+      - 正则表达式: linux/tools/regex.md
+      - Vim 工具: linux/tools/vim.md
+      - 包管理工具: linux/tools/package-management.md
     - Debian 参考手册:
       - GNU/Linux 教程: linux/debian/tutorials.md
-      - Debian 软件包管理: linux/debian/dpkg-management.md
+      - Debian 软件包管理: linux/debian/package-management.md
       - 系统初始化: linux/debian/system-initialization.md
       - 认证和访问控制: linux/debian/auth-and-ac.md
       - 网络设置: linux/debian/network-setup.md
   - 网课:
     - courses/index.md
     - TCCA: 
-      - 云计算概述: courses/tcca/01-Cloud-Overview.md
-      - 计算服务之云服务器: courses/tcca/02-CVM-Service.md
-      - 计算服务之容器技术: courses/tcca/03-Compute-Container-Tech.md
-      - 云网络服务: courses/tcca/04-Network-Service.md
-      - 云存储服务: courses/tcca/05-Storage-Service.md
-      - 云数据库服务: courses/tcca/06-Database-Service.md
-      - 云安全服务: courses/tcca/07-Security-Service.md
+      - 云计算概述: courses/tcca/01-cloud-overview.md
+      - 计算服务之云服务器: courses/tcca/02-cvm-service.md
+      - 计算服务之容器技术: courses/tcca/03-compute-container-tech.md
+      - 云网络服务: courses/tcca/04-network-service.md
+      - 云存储服务: courses/tcca/05-storage-service.md
+      - 云数据库服务: courses/tcca/06-database-service.md
+      - 云安全服务: courses/tcca/07-security-service.md
 
     - 操作系统: 
       - 绪论: courses/operating-systems/introduction.md

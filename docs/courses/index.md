@@ -19,13 +19,13 @@ title: 课程及目标
     -   [云数据库服务][database]
     -   [云安全服务][security]
 
-      [overview]: tcca/01-Cloud-Overview.md
-      [cvm]: tcca/02-CVM-Service.md
-      [container]: tcca/03-Compute-Container-Tech.md
-      [network]: tcca/04-Network-Service.md
-      [storage]: tcca/05-Storage-Service.md
-      [database]: tcca/06-Database-Service.md
-      [security]: tcca/07-Security-Service.md
+  [overview]: ./tcca/01-cloud-overview.md
+  [cvm]: ./tcca/02-cvm-service.md
+  [container]: ./tcca/03-compute-container-tech.md
+  [network]: ./tcca/04-network-service.md
+  [storage]: ./tcca/05-storage-service.md
+  [database]: ./tcca/06-database-service.md
+  [security]: ./tcca/07-security-service.md
 
     ---
 
@@ -34,6 +34,6 @@ title: 课程及目标
     -   [绪论][intro]
     -   [虚拟化][virtual]
 
-      [intro]: operating-systems/introduction.md
-      [virtual]: operating-systems/virtualization.md
+  [intro]: ./operating-systems/introduction.md
+  [virtual]: ./operating-systems/virtualization.md
 

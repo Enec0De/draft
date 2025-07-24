@@ -45,7 +45,7 @@ status: new
 
     介绍了这个文档是如何撰写的。
 
-      [fundamentals]: fundamentals/index.md
+  [fundamentals]: ./fundamentals/index.md
 
     ---
 
@@ -53,7 +53,7 @@ status: new
 
     主要内容涉及 **Python** 和 **Shell Script**。
 
-      [programming]: programming/index.md
+  [programming]: ./programming/index.md
 
     ---
 
@@ -61,7 +61,7 @@ status: new
 
     涉及一些**基本工具**，以及对不同 Linux 发行版**参考手册**的学习。
 
-      [linux]: linux/index.md
+  [linux]: ./linux/index.md
 
     ---
 
@@ -69,4 +69,4 @@ status: new
 
     正在学习的一些网络课程视频和行业认证。
 
-      [class]: courses/index.md
+  [class]: ./courses/index.md

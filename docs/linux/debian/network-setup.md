@@ -34,7 +34,7 @@ title: 网络设置
 -   如果有永久 IP 地址，文件 `/etc/hosts` 内应该有一行如下：
 
     ```
-    12.34.56.78 hostname.example.com hostname
+    93.184.216.34 hostname.example.com hostname
     ```
 
 -   如果 `resolvconf` 软件包没有安装，`/etc/resolv.conf` 是一个静态文件。

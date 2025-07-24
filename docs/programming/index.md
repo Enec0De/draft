@@ -15,9 +15,9 @@ title: Code Home
     -   [面向对象][obj]
     -   [操作系统][sys]
 
-      [pybase]: python/basics.md
-      [obj]: python/object-oriented.md
-      [sys]: python/system-interaction.md
+  [pybase]: ./python/basics.md
+  [obj]: ./python/object-oriented.md
+  [sys]: ./python/system-interaction.md
 
     ---
 
@@ -25,5 +25,5 @@ title: Code Home
 
     -   [基本语法][shbase]
 
-      [shbase]: shell-scripting/basics.md
+  [shbase]: ./shell-scripting/basics.md
 

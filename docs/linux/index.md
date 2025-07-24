@@ -16,10 +16,10 @@ title: Linux Home
     -   [Vim 工具][vim]
     -   [包管理工具][pkg]
 
-[essential-tools]: essential-tools/tools.md
-[regex]: essential-tools/regex.md
-[vim]: essential-tools/vim.md
-[pkg]: essential-tools/package-management.md
+[essential-tools]: ./tools/essential-commands.md
+[regex]: ./tools/regex.md
+[vim]: ./tools/vim.md
+[pkg]: ./tools/package-management.md
 
     ---
 
@@ -31,8 +31,8 @@ title: Linux Home
     -   [认证和访问控制][auth]
     -   [网络设置][net]
 
-[tutorials]: debian/tutorials.md
-[dpkg]: debian/dpkg-management.md
-[sysinit]: debian/system-initialization.md
-[auth]: debian/auth-and-ac.md
-[net]: debian/network-setup.md
+[tutorials]: ./debian/tutorials.md
+[dpkg]: ./debian/package-management.md
+[sysinit]: ./debian/system-initialization.md
+[auth]: ./debian/auth-and-ac.md
+[net]: ./debian/network-setup.md
