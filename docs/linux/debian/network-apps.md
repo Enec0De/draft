@@ -84,4 +84,118 @@ title: 网络应用
 
 ### 2.6. 基础 MTA 操作
 
+基础 MTA 操作列表：
+
+| `exim` 命令	        | `postfix` 命令	                        |
+| :-------------------: | :---------------------------------------: |
+| `sendmail`	        | `sendmail`     	                        |
+| `mailq`	            | `mailq`          	                        |
+| `newaliases`	        | `newaliases`   	                        | 
+| `exim4 -q`	        | `postqueue -f`	                        | 
+| `exim4 -qf`	        | `postsuper -r ALL deferred; postqueue -f` | 
+| `exim4 -qff`	        | `postsuper -r ALL; postqueue -f`          | 
+| `exim4 -Mg queue_id`  | `postsuper -h queue_id`	                | 
+| `exim4 -Mrm queue_id` | `postsuper -d queue_id`	                | 
+| `N/A`	                | `postsuper -d ALL`
+
+!!! tip "提示"
+
+    往 `/etc/ppp/ip-up.d/*` 里写一个刷新所有邮件的脚本会是个不错的主意。
+
+---
+
+3. 服务器远程访问和工具（SSH）
+------------------------------
+
+请阅读 `/usr/share/doc/openssh-client/README.Debian.gz`、`ssh(1)`、`sshd(8)`、`ssh-agent(1)`、`ssh-keygen(1)`、`ssh-add(1)` 和 `ssh-agent(1)`。
+
+配置文件相关请阅读 `ssh_config(5)`、`sshd_config(5)`。
+
+!!! danger "警告"
+ 
+    如果想要运行 OpenSSH 服务，`/etc/ssh/sshd_not_to_be_run` 必须不存在。
+
+    不要打开基于 rhost 的认证（`/etc/ssh/sshd_config` 中的 HostbasedAuthentication）。
+
+-   免密码远程连接
+
+    ``` bash
+    ssh-keygen -t rsa
+    cat .ssh/id_rsa.pub | ssh user1@remote "cat - >>.ssh/authorized_keys"
+    ```
+
+-   以下命令参阅 `ssh-agent(1)` 和 `ssh-add(1)`
+
+    ``` bash
+    ssh-agent bash
+    ssh-add ~/.ssh/id_rsa
+    ```
+
+-   从远程主机发邮件
+
+    ``` bash
+    ssh username@example.org /usr/sbin/sendmail -bm -ti -f "username@example.org" < mail_data.txt
+    ```
+
+-   SMTP/POP3 隧道的端口转发
+
+    ``` bash
+    ssh -q -L 4025:remote-server:25 4110:remote-server:110 username@remote-server
+    ```
+
+-   通过 SSH 关闭远程系统
+
+    ```bash
+    echo "shutdown -h now" | at now
+    ```
+
+---
+
+4. 打印服务和工具
+-----------------
+
+CUPS 是 Linux 的标准打印系统，基于 IPP 协议和 PDF 格式，通过 `lpr`（需安装 cups-bsd 包）命令实现自动化的跨平台打印。
+
+---
+
+5. 其他网络应用服务
+-------------------
+
+其他网络应用服务：`telnetd`、`telnetd-ssl`、`nfs-kernel-server`、`samba`、`netatalk`、`proftpd-basic`、`apache2`、`squid`、`bind9`、`isc-dhcp-server`
+
+!!! tip "提示"
+
+    通用互联网文件系统协议（CIFS）和服务消息块（SMB）协议一样，被微软 Windows 广泛应用。
+
+---
+
+6. 其他网络应用客户端
+---------------------
+
+其他网络应用客户端：`netcat`、`openssl`、`stunnel4`、`telnet`、`telnet-ssl`、`nfs-common`、`smbclient`、`cifs-utils`、`ftp`、`lftp`、`ncftp`、`wget`、`curl`、`axel`、`aria2`、`bind9-host`、`dnsutils`、`isc-dhcp-client`、`ldap-utils`
+
+---
+
+7. 系统后台守护进程（daemon）诊断
+---------------------------------
+
+`telnet` 程序能够手工连接到系统后台守护进程（daemon），并进行诊断。
+
+下面的 RFCs 提供每一个系统后台守护进程（daemon）所需要的知识。
+
+-   常用 RFC 列表：
+
+    | RFC  	            | 说明                        |
+    | :---------------: | :-------------------------: |
+    |rfc1939 和 rfc2449 | POP3 服务                   |
+    |rfc3501	        | IMAP4 服务                  |
+    |rfc2821 (rfc821)   | SMTP 服务                   |
+    |rfc2822 (rfc822)   | 邮件文件格式                |
+    |rfc2045	        | 多用途互联网邮件扩展（MIME）|
+    |rfc819	            | DNS 服务                    |
+    |rfc2616	        | HTTP 服务                   |
+    |rfc2396	        | URI 定义                    |
+
+-   在 `/etc/services` 里，描述了端口用途.
+
 
