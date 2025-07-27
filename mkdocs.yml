@@ -29,7 +29,7 @@ theme:
     # - navigation.instant.progress
     # - navigation.prune
     - navigation.sections
-    - navigation.tabs
+    # - navigation.tabs
     # - navigation.tabs.sticky
     - navigation.top
     - navigation.tracking
@@ -134,7 +134,8 @@ markdown_extensions:
 
 # Page tree
 nav:
-  - 主页: index.md
+  - 写在前面: 
+    - index.md
   - 文档规范: 
     - fundamentals/index.md
     - 基本元素:
@@ -169,6 +170,8 @@ nav:
       - 认证和访问控制: linux/debian/auth-and-ac.md
       - 网络设置: linux/debian/network-setup.md
       - 网络应用: linux/debian/network-apps.md
+      - GUI 系统: linux/debian/gui.md
+      - 国际化和本地化: linux/debian/i18n-and-l10n.md
   - 网课:
     - courses/index.md
     - TCCA: 

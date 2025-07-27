@@ -16,10 +16,10 @@ title: Linux Home
     -   [Vim 工具][vim]
     -   [包管理工具][pkg]
 
-[essential-tools]: ./tools/essential-commands.md
-[regex]: ./tools/regex.md
-[vim]: ./tools/vim.md
-[pkg]: ./tools/package-management.md
+  [essential-tools]: ./tools/essential-commands.md
+  [regex]: ./tools/regex.md
+  [vim]: ./tools/vim.md
+  [pkg]: ./tools/package-management.md
 
     ---
 
@@ -31,10 +31,14 @@ title: Linux Home
     -   [认证和访问控制][auth]
     -   [网络设置][net]
     -   [网络应用][apps]
+    -   [GUI 系统][gui]
+    -   [国际化和本地化][i18nl10n]
 
-[tutorials]: ./debian/tutorials.md
-[dpkg]: ./debian/package-management.md
-[sysinit]: ./debian/system-initialization.md
-[auth]: ./debian/auth-and-ac.md
-[net]: ./debian/network-setup.md
-[apps]: ./debian/network-apps.md
+  [tutorials]: ./debian/tutorials.md
+  [dpkg]: ./debian/package-management.md
+  [sysinit]: ./debian/system-initialization.md
+  [auth]: ./debian/auth-and-ac.md
+  [net]: ./debian/network-setup.md
+  [apps]: ./debian/network-apps.md
+  [gui]: ./debian/gui.md
+  [i18nl10n]: ./debian/i18n-and-l10n.md
