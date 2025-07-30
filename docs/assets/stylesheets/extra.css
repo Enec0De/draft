@@ -11,10 +11,3 @@
    --md-text-font: "BrightCode-Light";
    --md-code-font: "BrightCode-Light";
  }
-
-/* 自定义颜色 */
-[data-md-color-scheme="blackpink"] {
-  --md-primary-fg-color:             hsla(0,0%,11%,0.95);
-  --md-accent-fg-color:              #E16B8C;
-  --md-accent-fg-color--transparent: hsla(343,52%,88%,0.35);
-}

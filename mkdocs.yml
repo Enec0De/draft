@@ -40,7 +40,9 @@ theme:
     - toc.follow
     # - toc.integrate
   palette: 
-    scheme: blackpink
+    scheme: default
+    primary: black
+    accent: pink
     # - media: "(prefers-color-scheme: light)"
     #   scheme: default
     #   primary: cyan
