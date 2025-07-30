@@ -42,32 +42,12 @@ status: new
 笔记索引与简介
 ------------------
 
--   :octicons-repo-24: [**文档规范**][fundamentals]
-
-    介绍了这个文档是如何撰写的。
+-   :octicons-repo-24: [**文档规范**][fundamentals]：介绍了这个文档是如何撰写的。
+-   :fontawesome-solid-code: [**编程语言**][programming]：主要内容涉及 Python 和 Shell Script。
+-   :fontawesome-brands-linux: [**Linux**][linux]：顾名思义，和 Linux 相关的东西。
+-   :fontawesome-solid-champagne-glasses: [**网课**][class]：这一块儿目前疑似有点烂完了。
 
   [fundamentals]: ./fundamentals/index.md
-
-    ---
-
--   :fontawesome-solid-code: [**编程语言**][programming]
-
-    主要内容涉及 **Python** 和 **Shell Script**。
-
   [programming]: ./programming/index.md
-
-    ---
-
--   :fontawesome-brands-linux: [**Linux**][linux]
-
-    涉及一些**基本工具**，以及对不同 Linux 发行版**参考手册**的学习。
-
   [linux]: ./linux/index.md
-
-    ---
-
--   :fontawesome-solid-champagne-glasses: [**网课**][class]
-
-    正在学习的一些网络课程视频和行业认证。目前烂了。
-
   [class]: ./courses/index.md

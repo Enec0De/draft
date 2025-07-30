@@ -40,20 +40,21 @@ theme:
     - toc.follow
     # - toc.integrate
   palette: 
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: cyan
-      accent : amber
-      toggle:
-        icon: material/jellyfish
-        name: Switch to dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: black
-      accent: pink
-      toggle:
-        icon: material/jellyfish-outline
-        name: Switch to light mode
+    scheme: blackpink
+    # - media: "(prefers-color-scheme: light)"
+    #   scheme: default
+    #   primary: cyan
+    #   accent: amber
+    #   toggle:
+    #     icon: material/jellyfish
+    #     name: Switch to dark mode
+    # - media: "(prefers-color-scheme: dark)"
+    #   scheme: slate
+    #   primary: black
+    #   accent: pink
+    #   toggle:
+    #     icon: material/jellyfish-outline
+    #     name: Switch to light mode
   font: false
   favicon: assets/images/jellyfish-outline.svg
   icon:
@@ -65,8 +66,8 @@ plugins:
   - search:
       lang: zh
       # separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
-  - minify:
-      minify_html: true
+  # - minify:
+      # minify_html: true
 
 # Additional configuration
 extra:
@@ -136,13 +137,10 @@ markdown_extensions:
 nav:
   - 写在前面: 
     - index.md
-  - 文档规范: 
-    - fundamentals/index.md
-    - 基本元素:
-      - 文档源代码结构: fundamentals/document-structure.md
+    - 文档基本结构: fundamentals/index.md
+    - 其他规范:
       - 引用链接: fundamentals/links-and-references.md
       - 列表元素: fundamentals/lists.md
-    - 扩展元素:
       - 代码块元素: fundamentals/code-blocks.md
       - 网格元素: fundamentals/grid-layouts.md
       - 表格元素: fundamentals/tables.md

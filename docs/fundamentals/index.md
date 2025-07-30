@@ -1,42 +1,87 @@
 ---
-title: 文档规范
+title: 文档源代码结构
 ---
 
-前言 { #homepage }
-==================
+个人文档代码规范 { #document-structure }
+========================================
 
-我自己写作的标准与规范。
+:octicons-milestone-24: 内容仅服务于我个人喜好，心存疑惑就别乱学，小心跟我学坏。
 
 ---
 
-这些内容虽然分为了“基本元素”和“扩展元素”两类，但使用起来并没有真正意义上的优先级，只是为了方便查阅。合理地按需使用即可。
+基本结构 { #structure }
+-----------------------
 
-<div class="grid cards" markdown>
+以下代码模版描述了一个文档的基本骨架：
 
--   :fontawesome-solid-hashtag: **基本元素**
+``` markdown title="template.md" linenums="1" hl_lines="5 6 12 13 19"
+---
+title: 页面标题
+---
 
-    ---
-    
-    -   [文档源代码结构][document-structure]
-    -   [引用链接][links-and-references]
-    -   [列表元素][lists]
-    
-  [document-structure]: ./document-structure.md
-  [links-and-references]: ./links-and-references.md
-  [lists]: ./lists.md
-    
--   :fontawesome-solid-hashtag: **扩展元素**
+一级标题
+========
 
-    ---
-    
-    -   [代码块元素][code-blocks]
-    -   [网格元素][grid-layouts]
-    -   [表格元素][tables]
-    -   [其他元素][other-elements]
-    
-  [code-blocks]: ./code-blocks.md
-  [grid-layouts]: ./grid-layouts.md
-  [tables]: ./tables.md
-  [other-elements]: ./other-elements.md
+<!-- 注释内容 -->
 
-</div>
+---
+
+二级标题
+--------
+
+`---` 为水平分隔线。
+
+*斜体*、**粗体**、***斜粗体***。
+
+### 三级标题
+
+> 引用内容
+>
+> > 嵌套引用
+```
+
+!!! warning ":octicons-hubot-16:"
+
+    对于各级标题的创建语法，高亮处代码并非最佳实践[^1]。
+
+[^1]:
+    兼顾了源代码的可读性，但很大程度上取决于我个人的偏好，**并非最佳工程实践**，不值得学习。
+
+同时建议用以下方式修改渲染的锚点与目录：
+
+``` markdown
+...
+Heading 1 { #New-H1 data-toc-label="New H1" }
+=============================================
+...
+heading 2 { #New-H2 data-toc-label="New H2" }
+---------------------------------------------
+...
+### Heading 3 { #New-H3 data-toc-label="New H3" }
+...
+```
+
+!!! info ":octicons-smiley-16:"
+    
+    约定不使用四级及以上的标题，最多仅使用一层嵌套引用。
+
+---
+
+元数据 { #meta-data }
+---------------------
+
+在文档开头用 `---` 包裹：
+
+``` markdown linenums="1" hl_lines="2"
+---
+title: Getting-started
+---
+
+Page title
+==========
+...
+```
+
+可用属性包括：`title`、`description`、`icon`、`status`、`subtitle`、`template`，参考[文档][ref]。
+
+  [ref]: https://squidfunk.github.io/mkdocs-material/reference/
